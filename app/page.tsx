@@ -824,7 +824,7 @@ export default function HyveExactReplica() {
           <Button variant="ghost" className="hidden sm:flex text-[#666666] text-sm font-medium">
             Login
           </Button>
-          <Button className="bg-[#FDC10B] hover:bg-[#F1AB13] text-black text-xs sm:text-sm font-medium px-3 sm:px-6 py-2 rounded-lg">
+          <Button className="bg-gradient-to-r from-[#F9A825] to-[#FFD600] text-black font-semibold text-sm sm:text-base px-6 py-2 rounded-lg border border-yellow-400 shadow-md hover:brightness-105 transition">
             Sign up
           </Button>
           <Button variant="ghost" className="lg:hidden p-2">
