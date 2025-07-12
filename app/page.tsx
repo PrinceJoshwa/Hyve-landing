@@ -900,7 +900,7 @@ export default function HyveExactReplica() {
           </div>
 
           {/* Ved Sharma Card - Top Left */}
-          <div className="absolute top-4 left-[15%] w-40 sm:w-52 z-10">
+          <div className="absolute top-4 left-[12%] w-40 sm:w-52 z-10">
             <Image
               src="/ved-sharma-card.png"
               alt="Ved Sharma - Front End Developer"
@@ -908,7 +908,7 @@ export default function HyveExactReplica() {
               height={80}
               className="w-full h-auto object-contain drop-shadow-xl"
             />
-            <div className="absolute bottom-16 left-4 w-12 h-12 sm:w-22 sm:h-22 rounded-full overflow-hidden border-2 border-[#F1AB13]">
+            <div className="absolute bottom-12 sm:bottom-15 left-4 w-12 h-12 sm:w-22 sm:h-22 rounded-full overflow-hidden border-2 border-[#F1AB13]">
               <Image
                 src="/ved-sharma.jpg"
                 alt="ved sharma"
@@ -920,7 +920,7 @@ export default function HyveExactReplica() {
           </div>
 
           {/* Jiya Gupta Card - Top Right */}
-          <div className="absolute top-4 right-[15%] w-40 sm:w-52 z-10">
+          <div className="absolute top-4 right-[12%] w-40 sm:w-52 z-10">
             <Image
               src="/jiya-gupta-card.png"
               alt="Jiya Gupta - Graphic Designer"
@@ -928,7 +928,7 @@ export default function HyveExactReplica() {
               height={80}
               className="w-full h-auto object-contain drop-shadow-xl"
             />
-            <div className="absolute bottom-16 right-4 w-12 h-12 sm:w-22 sm:h-22 rounded-full overflow-hidden border-2 border-[#F1AB13]">
+            <div className="absolute bottom-12 sm:bottom-16 right-4 w-12 h-12 sm:w-22 sm:h-22 rounded-full overflow-hidden border-2 border-[#F1AB13]">
               <Image
                 src="/jiya-gupta.jpg"
                 alt="Jiya Gupta"
@@ -940,68 +940,78 @@ export default function HyveExactReplica() {
           </div>
 
           {/* Central Hero Image */}
-          <div className="relative z-20">
-            <Image
-              src="/hero-person.png"
-              alt="Person with laptop on beanbag"
-              width={320}
-              height={320}
-              className="w-[400px] h-[400px] sm:w-[700px] sm:h-[700px] object-contain"
-            />
-          </div>
+<div className="relative z-0">
+  <Image
+    src="/hero-person.png"
+    alt="Person with laptop on beanbag"
+    width={320}
+    height={320}
+    className="w-[300px] h-[300px] sm:w-[700px] sm:h-[700px] object-contain mx-auto"
+  />
+</div>
 
-          {/* Rahul Shetty Card - Bottom Left */}
-          <div className="absolute top-36 left-[22%] w-40 sm:w-52 z-10">
-            <Image
-              src="/rahul-shetty-card.png"
-              alt="Rahul Shetty - UI/UX Designer"
-              width={208}
-              height={100}
-              className="w-full h-auto object-contain drop-shadow-xl"
-            />
-          </div>
+{/* Rahul Shetty Card - Bottom Left */}
+<div className="absolute top-20 left-4 sm:top-36 sm:left-[22%] w-40 sm:w-52 z-30">
+  <Image
+    src="/rahul-shetty-card.png"
+    alt="Rahul Shetty - UI/UX Designer"
+    width={208}
+    height={100}
+    className="w-full h-auto object-contain drop-shadow-xl z-30"
+  />
+</div>
 
-          {/* Total Earnings Card - Right */}
-          <div className="absolute top-1/4 right-[20%] w-48 sm:w-60 z-10">
-            <Image
-              src="/earnings-card.png"
-              alt="Total Earnings ₹3,00,000"
-              width={240}
-              height={160}
-              className="w-full h-auto object-contain drop-shadow-xl"
-            />
-            <div className="absolute top-20 right-3 w-12 h-12 sm:w-18 sm:h-18 rounded-full overflow-hidden border-2 border-[#F1AB13]">
-              <Image
-                src="/asian-man.png"
-                alt="asian man"
-                width={48}
-                height={48}
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
+{/* Total Earnings Card - Right */}
+<div className="absolute top-20 right-4 sm:top-1/4 sm:right-[20%] w-44 sm:w-60 z-30">
+  <Image
+    src="/earnings-card.png"
+    alt="Total Earnings ₹3,00,000"
+    width={240}
+    height={160}
+    className="w-full h-auto object-contain drop-shadow-xl z-30"
+  />
+  <div className="absolute top-15 right-2 w-12 h-12 sm:w-18 sm:h-18 sm:top-20 rounded-full overflow-hidden border-2 border-[#F1AB13] z-30">
+    <Image
+      src="/asian-man.png"
+      alt="asian man"
+      width={48}
+      height={48}
+      className="w-full h-full object-cover"
+    />
+  </div>
+</div>
 
-          {/* Escrow Payment Card - Bottom Left */}
-          <div className="absolute bottom-16 left-[20%] w-44 sm:w-56 z-10">
-            <Image
-              src="/escrow-payment-card.png"
-              alt="Escrow Payment - Safe & Secured Protection"
-              width={224}
-              height={60}
-              className="w-full h-auto object-contain drop-shadow-xl"
-            />
-          </div>
+{/* Escrow Payment Card - Bottom Left */}
+<div className="absolute bottom-28 left-4 sm:bottom-16 sm:left-[20%] w-44 sm:w-56 z-30">
+  <Image
+    src="/escrow-payment-card.png"
+    alt="Escrow Payment - Safe & Secured Protection"
+    width={224}
+    height={60}
+    className="w-full h-auto object-contain drop-shadow-xl"
+  />
+  <div className="absolute -top-9 left-1 w-12 h-12 sm:w-18 sm:-top-20 sm:h-18 rounded-full bg-blue-400 overflow-hidden border-2 border-[#F1AB13] z-30">
+    <Image
+      src="/student-woman.png"
+      alt="student"
+      width={48}
+      height={48}
+      className="w-full h-full object-cover"
+    />
+  </div>
+</div>
 
-          {/* New Task Alert - Bottom Right */}
-          <div className="absolute bottom-4 right-[20%] w-40 sm:w-52 z-10">
-            <Image
-              src="/new-task-alert.png"
-              alt="New Task Alert - Build website for D2C brand ₹30,000"
-              width={208}
-              height={80}
-              className="w-full h-auto object-contain drop-shadow-xl"
-            />
-          </div>
+{/* New Task Alert - Bottom Right */}
+<div className="absolute bottom-4 right-4 sm:right-[20%] w-40 sm:w-52 z-30">
+  <Image
+    src="/new-task-alert.png"
+    alt="New Task Alert - Build website for D2C brand ₹30,000"
+    width={208}
+    height={80}
+    className="w-full h-auto object-contain drop-shadow-xl"
+  />
+</div>
+
 
           {/* Dotted connecting lines */}
           <svg className="absolute inset-0 w-full h-full pointer-events-none" style={{ zIndex: 1 }}>
