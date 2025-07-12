@@ -1033,9 +1033,9 @@ export default function HyveExactReplica() {
               <Image
                 src="/team-group.png" // replace with actual image path
                 alt="Group"
-                width={88}
-                height={88}
-                className="w-[88px] h-[88px] object-contain"
+                width={100}
+                height={100}
+                className="w-[100px] h-[100px] object-contain translate-y-10"
               />
               <div className="text-[#2D2D2D]">
                 <div className="text-[32px] font-bold leading-[1]">“</div>
