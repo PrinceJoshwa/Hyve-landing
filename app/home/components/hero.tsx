@@ -1296,7 +1296,7 @@ export default function Home() {
           </div>
 
           {/* Ved Sharma Card - Top Left */}
-          <div className="absolute top-4 sm:-top-18 sm:left-[15%] left-[12%] w-40 sm:w-70 z-10">
+          <div className="absolute top-0 sm:-top-18 sm:left-[15%] left-[0%] w-40 sm:w-70 z-10">
             <Image
               src="/ved-sharma-card.png"
               alt="Ved Sharma - Front End Developer"
@@ -1316,24 +1316,24 @@ export default function Home() {
           </div>
 
           {/* Form Team Card - Top Center */}
-          <div className="absolute top-4 center w-40 sm:w-52 z-10">
+          <div className="absolute sm:top-4 top-10 center w-30 sm:w-52 z-10">
             <Image
               src="/Frame.png"
-              alt="Ved Sharma - Front End Developer"
+              alt="Team Card"
               width={208}
               height={80}
               className="w-full h-auto object-contain drop-shadow-xl"
             />
-            <div className="absolute bottom-12 bottom-12 sm:-bottom-13 -right-50 w-12 h-12 sm:w-50 sm:h-50 overflow-hidden ">
+            <div className="absolute bottom-12 bottom-12 sm:-bottom-13 sm:-right-50 -right-28 w-30 h-12 sm:w-50 sm:h-50 overflow-hidden ">
               <Image src="/Vector.png" alt="arrow" width={1000} height={1000} className="object-cover" />
             </div>
-            <div className="absolute bottom-12 sm:-bottom-10 -left-50 w-12 h-12 sm:w-50 sm:h-50 overflow-hidden ">
+            <div className="absolute bottom-8 sm:-bottom-10 sm:-left-50 -left-16 w-20 h-12 sm:w-50 sm:h-50 overflow-hidden ">
               <Image src="/Vector1.png" alt="arrow" width={1000} height={1000} className="object-cover" />
             </div>
           </div>
 
           {/* Jiya Gupta Card - Top Right */}
-          <div className="absolute top-4 right-[12%] sm:-top-18 sm:right-[15%] w-40 sm:w-68 z-10">
+          <div className="absolute top-0 right-[0%] sm:-top-18 sm:right-[15%] w-40 sm:w-68 z-10">
             <Image
               src="/jiya-gupta-card.png"
               alt="Jiya Gupta - Graphic Designer"
@@ -1364,7 +1364,7 @@ export default function Home() {
           </div>
 
           {/* Rahul Shetty Card - Bottom Left */}
-          <div className="absolute top-20 left-4 sm:top-36 sm:left-[18%] w-40 sm:w-65 z-30">
+          <div className="absolute top-20 left-0 sm:top-36 sm:left-[18%] w-40 sm:w-65 z-30">
             <Image
               src="/rahul-shetty-card.png"
               alt="Rahul Shetty - UI/UX Designer"
@@ -1375,7 +1375,7 @@ export default function Home() {
           </div>
 
           {/* Total Earnings Card - Right */}
-          <div className="absolute top-20 right-4 sm:top-1/4 sm:right-[18%] w-44 sm:w-70 z-30">
+          <div className="absolute top-20 -right-1 sm:top-1/4 sm:right-[18%] w-44 sm:w-70 z-30">
             <Image
               src="/earnings-card.png"
               alt="Total Earnings ₹3,00,000"
@@ -1395,7 +1395,7 @@ export default function Home() {
           </div>
 
           {/* Escrow Payment Card - Bottom Left */}
-          <div className="absolute bottom-28 left-4 sm:bottom-16 sm:left-[17%] w-44 sm:w-70 z-30">
+          <div className="absolute bottom-0 left-4 sm:bottom-16 sm:left-[17%] w-44 sm:w-70 z-30">
             <Image
               src="/escrow-payment-card.png"
               alt="Escrow Payment - Safe & Secured Protection"
@@ -1415,7 +1415,7 @@ export default function Home() {
           </div>
 
           {/* New Task Alert - Bottom Right */}
-          <div className="absolute bottom-4 right-4 sm:right-[20%] w-40 sm:w-70 z-30">
+          <div className="absolute bottom-0 right-4 sm:right-[20%] w-40 sm:w-70 z-30">
             <Image
               src="/new-task-alert.png"
               alt="New Task Alert - Build website for D2C brand ₹30,000"
