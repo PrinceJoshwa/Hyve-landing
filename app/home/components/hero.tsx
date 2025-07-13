@@ -329,7 +329,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* How HYVE Works Section */}
+       {/* How HYVE Works Section */}
         <div className="relative py-12 md:py-20 bg-gray-50 overflow-hidden">
           {/* Decorative Elements */}
           <div className="absolute top-4 left-4 md:top-8 md:left-8 w-12 h-12 md:w-20 md:h-20 opacity-40">
@@ -371,9 +371,22 @@ export default function Home() {
                       </p>
                     </div>
                     {/* Visual */}
-                    <div className="relative">
-                      <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-yellow-200 via-yellow-300 to-yellow-400 opacity-90"></div>
-                      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 md:w-80 bg-white rounded-xl shadow-xl p-4 md:p-5 border border-gray-100">
+                    <div className="relative w-full h-[300px] md:h-[400px] flex items-center justify-center">
+                      <Image
+                        src="/ellipse-28-1.png"
+                        alt="Background ellipse"
+                        width={250}
+                        height={250}
+                        className="absolute -top-20 -left-20 w-[200px] h-[200px] md:w-[350px] md:h-[350px] object-contain opacity-80 blur-lg z-0"
+                      />
+                      <Image
+                        src="/ellipse-30-1.png"
+                        alt="Background ellipse"
+                        width={250}
+                        height={250}
+                        className="absolute -bottom-20 -right-20 w-[200px] h-[200px] md:w-[350px] md:h-[350px] object-contain opacity-80 blur-lg z-0"
+                      />
+                      <div className="relative z-10 w-72 md:w-80 bg-white/30 rounded-xl shadow-xl p-4 md:p-5 border border-[#F1AB13] backdrop-blur-lg">
                         <h3 className="font-bold text-sm md:text-base mb-2 md:mb-3 text-gray-800">Project Details</h3>
                         <p className="text-xs md:text-sm text-gray-600 mb-3 md:mb-4 leading-relaxed">
                           Designing a Logo and website for your Fashion Apparel Brand
@@ -404,9 +417,22 @@ export default function Home() {
                 <div className="hidden lg:flex items-center">
                   {/* Left Side - Visual */}
                   <div className="w-1/2 flex justify-center pr-8">
-                    <div className="relative">
-                      <div className="w-80 h-80 rounded-full bg-gradient-to-br from-yellow-200 via-yellow-300 to-yellow-400 opacity-90"></div>
-                      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-92 bg-white rounded-xl shadow-xl p-5 border border-gray-100">
+                    <div className="relative w-full h-[400px] flex items-center justify-center">
+                      <Image
+                        src="/ellipse-28-1.png"
+                        alt="Background ellipse"
+                        width={250}
+                        height={250}
+                        className="absolute -top-20 -left-20 w-[200px] h-[200px] md:w-[350px] md:h-[350px] object-contain opacity-80 blur-lg z-0"
+                      />
+                      <Image
+                        src="/ellipse-30-1.png"
+                        alt="Background ellipse"
+                        width={250}
+                        height={250}
+                        className="absolute -bottom-20 -right-20 w-[200px] h-[200px] md:w-[350px] md:h-[350px] object-contain opacity-80 blur-lg z-0"
+                      />
+                      <div className="relative z-10 w-92 bg-white/30 rounded-xl shadow-xl p-5 border border-[#F1AB13] backdrop-blur-lg">
                         <h3 className="font-bold text-base mb-3 text-gray-800">Project Details</h3>
                         <p className="text-sm text-gray-600 mb-4 leading-relaxed">
                           Designing a Logo and website for your Fashion Apparel Brand
@@ -471,9 +497,22 @@ export default function Home() {
                       </p>
                     </div>
                     {/* Visual */}
-                    <div className="relative">
-                      <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-yellow-200 via-yellow-300 to-yellow-400 opacity-90"></div>
-                      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 md:w-80 bg-white rounded-xl shadow-xl p-4 md:p-5 border border-gray-100">
+                    <div className="relative w-full h-[300px] md:h-[400px] flex items-center justify-center">
+                      <Image
+                        src="/ellipse-28-1.png"
+                        alt="Background ellipse"
+                        width={250}
+                        height={250}
+                        className="absolute -top-20 -left-20 w-[200px] h-[200px] md:w-[350px] md:h-[350px] object-contain opacity-80 blur-lg z-0"
+                      />
+                      <Image
+                        src="/ellipse-30-1.png"
+                        alt="Background ellipse"
+                        width={250}
+                        height={250}
+                        className="absolute -bottom-20 -right-20 w-[200px] h-[200px] md:w-[350px] md:h-[350px] object-contain opacity-80 blur-lg z-0"
+                      />
+                      <div className="relative z-10 w-72 md:w-80 bg-white/30 rounded-xl shadow-xl p-4 md:p-5 border border-[#F1AB13] backdrop-blur-lg">
                         <div className="flex items-center space-x-3 mb-4">
                           <div className="flex -space-x-2">
                             <div className="w-8 h-8 md:w-9 md:h-9 rounded-full overflow-hidden border-2 border-white">
@@ -532,6 +571,8 @@ export default function Home() {
                   {/* Right Side - Content (now on left) */}
                   <div className="w-1/2 pr-16 text-right">
                     <div className="max-w-md ml-auto">
+                      {" "}
+                      {/* Use ml-auto to push content to the right within its half-width */}
                       <h3 className="text-2xl font-bold text-gray-800 mb-4">
                         <span className="text-[#F1AB13] mr-2">2.</span>Get Matched
                       </h3>
@@ -549,9 +590,22 @@ export default function Home() {
                   </div>
                   {/* Left Side - Visual (now on right) */}
                   <div className="w-1/2 flex justify-center pl-8">
-                    <div className="relative">
-                      <div className="w-80 h-80 rounded-full bg-gradient-to-br from-yellow-200 via-yellow-300 to-yellow-400 opacity-90"></div>
-                      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-92 bg-white rounded-xl shadow-xl p-5 border border-gray-100">
+                    <div className="relative w-full h-[400px] flex items-center justify-center">
+                      <Image
+                        src="/ellipse-28-1.png"
+                        alt="Background ellipse"
+                        width={250}
+                        height={250}
+                        className="absolute -top-20 -left-20 w-[200px] h-[200px] md:w-[350px] md:h-[350px] object-contain opacity-80 blur-lg z-0"
+                      />
+                      <Image
+                        src="/ellipse-30-1.png"
+                        alt="Background ellipse"
+                        width={250}
+                        height={250}
+                        className="absolute -bottom-20 -right-20 w-[200px] h-[200px] md:w-[350px] md:h-[350px] object-contain opacity-80 blur-lg z-0"
+                      />
+                      <div className="relative z-10 w-92 bg-white/30 rounded-xl shadow-xl p-5 border border-[#F1AB13] backdrop-blur-lg">
                         <div className="flex items-center space-x-3 mb-4">
                           <div className="flex -space-x-2">
                             <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full overflow-hidden border-2 border-white">
@@ -625,9 +679,22 @@ export default function Home() {
                       </p>
                     </div>
                     {/* Visual */}
-                    <div className="relative">
-                      <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-yellow-200 via-yellow-300 to-yellow-400 opacity-90"></div>
-                      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 md:w-80 bg-white rounded-xl shadow-xl p-4 md:p-5 border border-gray-100">
+                    <div className="relative w-full h-[300px] md:h-[400px] flex items-center justify-center">
+                      <Image
+                        src="/ellipse-28-1.png"
+                        alt="Background ellipse"
+                        width={250}
+                        height={250}
+                        className="absolute -top-20 -left-20 w-[200px] h-[200px] md:w-[350px] md:h-[350px] object-contain opacity-80 blur-lg z-0"
+                      />
+                      <Image
+                        src="/ellipse-30-1.png"
+                        alt="Background ellipse"
+                        width={250}
+                        height={250}
+                        className="absolute -bottom-20 -right-20 w-[200px] h-[200px] md:w-[350px] md:h-[350px] object-contain opacity-80 blur-lg z-0"
+                      />
+                      <div className="relative z-10 w-72 md:w-80 bg-white/30 rounded-xl shadow-xl p-4 md:p-5 border border-[#F1AB13] backdrop-blur-lg">
                         <h3 className="font-bold text-sm md:text-base mb-2 md:mb-3 text-gray-800">Project Details</h3>
                         <p className="text-xs md:text-sm text-gray-600 mb-3 md:mb-4 leading-relaxed">
                           Designing a Logo and website for your Fashion Apparel Brand
@@ -658,9 +725,22 @@ export default function Home() {
                 <div className="hidden lg:flex items-center">
                   {/* Left Side - Visual */}
                   <div className="w-1/2 flex justify-center pr-8">
-                    <div className="relative">
-                      <div className="w-80 h-80 rounded-full bg-gradient-to-br from-yellow-200 via-yellow-300 to-yellow-400 opacity-90"></div>
-                      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-92 bg-white rounded-xl shadow-xl p-5 border border-gray-100">
+                    <div className="relative w-full h-[400px] flex items-center justify-center">
+                      <Image
+                        src="/ellipse-28-1.png"
+                        alt="Background ellipse"
+                        width={250}
+                        height={250}
+                        className="absolute -top-20 -left-20 w-[200px] h-[200px] md:w-[350px] md:h-[350px] object-contain opacity-80 blur-lg z-0"
+                      />
+                      <Image
+                        src="/ellipse-30-1.png"
+                        alt="Background ellipse"
+                        width={250}
+                        height={250}
+                        className="absolute -bottom-20 -right-20 w-[200px] h-[200px] md:w-[350px] md:h-[350px] object-contain opacity-80 blur-lg z-0"
+                      />
+                      <div className="relative z-10 w-92 bg-white/30 rounded-xl shadow-xl p-5 border border-[#F1AB13] backdrop-blur-lg">
                         <h3 className="font-bold text-base mb-3 text-gray-800">Project Details</h3>
                         <p className="text-sm text-gray-600 mb-4 leading-relaxed">
                           Designing a Logo and website for your Fashion Apparel Brand
@@ -724,9 +804,22 @@ export default function Home() {
                       </p>
                     </div>
                     {/* Visual */}
-                    <div className="relative">
-                      <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-yellow-200 via-yellow-300 to-yellow-400 opacity-90"></div>
-                      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 md:w-80 bg-white rounded-xl shadow-xl p-4 md:p-5 border border-gray-100">
+                    <div className="relative w-full h-[300px] md:h-[400px] flex items-center justify-center">
+                      <Image
+                        src="/ellipse-28-1.png"
+                        alt="Background ellipse"
+                        width={250}
+                        height={250}
+                        className="absolute -top-20 -left-20 w-[200px] h-[200px] md:w-[350px] md:h-[350px] object-contain opacity-80 blur-lg z-0"
+                      />
+                      <Image
+                        src="/ellipse-30-1.png"
+                        alt="Background ellipse"
+                        width={250}
+                        height={250}
+                        className="absolute -bottom-20 -right-20 w-[200px] h-[200px] md:w-[350px] md:h-[350px] object-contain opacity-80 blur-lg z-0"
+                      />
+                      <div className="relative z-10 w-72 md:w-80 bg-white/30 rounded-xl shadow-xl p-4 md:p-5 border border-[#F1AB13] backdrop-blur-lg">
                         <h3 className="font-bold text-sm md:text-base mb-2 md:mb-3 text-gray-800">Project Details</h3>
                         <p className="text-xs md:text-sm text-gray-600 mb-3 md:mb-4 leading-relaxed">
                           Designing a Logo and website for your Fashion Apparel Brand
@@ -758,6 +851,8 @@ export default function Home() {
                   {/* Right Side - Content (now on left) */}
                   <div className="w-1/2 pr-16 text-right">
                     <div className="max-w-md ml-auto">
+                      {" "}
+                      {/* Use ml-auto to push content to the right within its half-width */}
                       <h3 className="text-2xl font-bold text-gray-800 mb-4">
                         <span className="text-[#F1AB13] mr-2">4.</span>Pay Securely
                       </h3>
@@ -774,9 +869,22 @@ export default function Home() {
                   </div>
                   {/* Left Side - Visual (now on right) */}
                   <div className="w-1/2 flex justify-center pl-8">
-                    <div className="relative">
-                      <div className="w-80 h-80 rounded-full bg-gradient-to-br from-yellow-200 via-yellow-300 to-yellow-400 opacity-90"></div>
-                      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-92 bg-white rounded-xl shadow-xl p-5 border border-gray-100">
+                    <div className="relative w-full h-[400px] flex items-center justify-center">
+                      <Image
+                        src="/ellipse-28-1.png"
+                        alt="Background ellipse"
+                        width={250}
+                        height={250}
+                        className="absolute -top-20 -left-20 w-[200px] h-[200px] md:w-[350px] md:h-[350px] object-contain opacity-80 blur-lg z-0"
+                      />
+                      <Image
+                        src="/ellipse-30-1.png"
+                        alt="Background ellipse"
+                        width={250}
+                        height={250}
+                        className="absolute -bottom-20 -right-20 w-[200px] h-[200px] md:w-[350px] md:h-[350px] object-contain opacity-80 blur-lg z-0"
+                      />
+                      <div className="relative z-10 w-92 bg-white/30 rounded-xl shadow-xl p-5 border border-[#F1AB13] backdrop-blur-lg">
                         <h3 className="font-bold text-base mb-3 text-gray-800">Project Details</h3>
                         <p className="text-sm text-gray-600 mb-4 leading-relaxed">
                           Designing a Logo and website for your Fashion Apparel Brand
@@ -807,6 +915,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+
 
         {/* Professional Toggle Section */}
         <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
