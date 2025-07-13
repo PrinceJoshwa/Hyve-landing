@@ -354,62 +354,62 @@ export default function Home() {
           <div className="max-w-6xl mx-auto px-4 relative">
             {/* Desktop Vertical Line - Hidden on mobile */}
             <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-1 bg-[#F1AB13] opacity-80"></div>
-            <div className="space-y-16 md:space-y-24 lg:space-y-32">
+            <div className="space-y-4 md:space-y-6 lg:space-y-8">
               {/* Step 1: Post a Project */}
               <div className="relative">
                 {/* Mobile Layout */}
                 <div className="lg:hidden">
-                  <div className="flex flex-col items-center text-center space-y-6">
+                  <div className="flex flex-col items-center text-center space-y-3">
                     {/* Icon */}
-                    <div className="w-12 h-12 md:w-14 md:h-14 bg-[#F1AB13] rounded-full flex items-center justify-center shadow-lg">
-                      <FileText className="w-6 h-6 md:w-7 md:h-7 text-white" />
+                    <div className="w-10 h-10 md:w-12 md:h-12 bg-[#F1AB13] rounded-full flex items-center justify-center shadow-lg">
+                      <FileText className="w-5 h-5 md:w-6 md:h-6 text-white" />
                     </div>
                     {/* Content */}
                     <div className="max-w-md">
-                      <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-3 md:mb-4">
+                      <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-2 md:mb-3">
                         <span className="text-[#F1AB13] mr-2">1.</span>Post a Project
                       </h3>
-                      <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-6">
+                      <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-3">
                         Describe your project, set your budget, and specify the skills you need.
                       </p>
                     </div>
                     {/* Visual */}
-                    <div className="relative w-full h-[300px] md:h-[400px] flex items-center justify-center">
+                    <div className="relative w-full h-[200px] md:h-[250px] flex items-center justify-center">
                       <Image
                         src="/ellipse-28-1.png"
                         alt="Background ellipse"
                         width={250}
                         height={250}
-                        className="absolute -top-20 -left-20 w-[200px] h-[200px] md:w-[350px] md:h-[350px] object-contain opacity-80 blur-lg z-0"
+                        className="absolute -top-20 -left-20 w-[150px] h-[150px] md:w-[250px] md:h-[250px] object-contain opacity-50 blur-lg z-0"
                       />
                       <Image
                         src="/ellipse-30-1.png"
                         alt="Background ellipse"
                         width={250}
                         height={250}
-                        className="absolute -bottom-20 -right-20 w-[200px] h-[200px] md:w-[350px] md:h-[350px] object-contain opacity-80 blur-lg z-0"
+                        className="absolute -bottom-20 -right-20 w-[150px] h-[150px] md:w-[250px] md:h-[250px] object-contain opacity-50 blur-lg z-0"
                       />
-                      <div className="relative z-10 w-72 md:w-80 bg-white/30 rounded-xl shadow-xl p-4 md:p-5 border border-[#F1AB13] backdrop-blur-lg">
-                        <h3 className="font-bold text-sm md:text-base mb-2 md:mb-3 text-gray-800">Project Details</h3>
-                        <p className="text-xs md:text-sm text-gray-600 mb-3 md:mb-4 leading-relaxed">
+                      <div className="relative z-10 w-64 md:w-72 bg-white/30 rounded-xl shadow-xl p-3 md:p-4 border border-[#F1AB13] backdrop-blur-lg">
+                        <h3 className="font-bold text-xs md:text-sm mb-2 text-gray-800">Project Details</h3>
+                        <p className="text-xs text-gray-600 mb-2 md:mb-3 leading-relaxed">
                           Designing a Logo and website for your Fashion Apparel Brand
                         </p>
-                        <div className="flex flex-wrap gap-2 mb-3 md:mb-4">
-                          <Badge className="bg-blue-100 text-blue-700 text-xs font-medium px-2 md:px-3 py-1">
+                        <div className="flex flex-wrap gap-1 mb-2 md:mb-3">
+                          <Badge className="bg-blue-100 text-blue-700 text-xs font-medium px-2 py-1">
                             UI/UX Designer
                           </Badge>
-                          <Badge className="bg-yellow-100 text-yellow-700 text-xs font-medium px-2 md:px-3 py-1">
+                          <Badge className="bg-yellow-100 text-yellow-700 text-xs font-medium px-2 py-1">
                             Logo Designer
                           </Badge>
                         </div>
-                        <div className="flex justify-between text-xs md:text-sm">
+                        <div className="flex justify-between text-xs">
                           <div>
                             <p className="text-gray-500 text-xs mb-1">Timeline</p>
                             <p className="font-semibold text-gray-800">20th July-30th Aug</p>
                           </div>
                           <div className="text-right">
                             <p className="text-gray-500 text-xs mb-1">Estimated Cost</p>
-                            <p className="font-bold text-base md:text-lg text-gray-800">₹ 30,000</p>
+                            <p className="font-bold text-sm md:text-base text-gray-800">₹ 30,000</p>
                           </div>
                         </div>
                       </div>
@@ -420,42 +420,29 @@ export default function Home() {
                 <div className="hidden lg:flex items-center">
                   {/* Left Side - Visual */}
                   <div className="w-1/2 flex justify-center pr-8">
-                    <div className="relative w-full h-[400px] flex items-center justify-center">
-                      <Image
-                        src="/ellipse-28-1.png"
-                        alt="Background ellipse"
-                        width={250}
-                        height={250}
-                        className="absolute -top-20 -left-20 w-[200px] h-[200px] md:w-[350px] md:h-[350px] object-contain opacity-80 blur-lg z-0"
-                      />
-                      <Image
-                        src="/ellipse-30-1.png"
-                        alt="Background ellipse"
-                        width={250}
-                        height={250}
-                        className="absolute -bottom-20 -right-20 w-[200px] h-[200px] md:w-[350px] md:h-[350px] object-contain opacity-80 blur-lg z-0"
-                      />
-                      <div className="relative z-10 w-92 bg-white/30 rounded-xl shadow-xl p-5 border border-[#F1AB13] backdrop-blur-lg">
-                        <h3 className="font-bold text-base mb-3 text-gray-800">Project Details</h3>
-                        <p className="text-sm text-gray-600 mb-4 leading-relaxed">
+                    <div className="relative w-full h-[250px] flex items-center justify-center">
+                    
+                      <div className="relative z-10 w-80 bg-white/30 rounded-xl shadow-xl p-4 border border-[#F1AB13] backdrop-blur-lg">
+                        <h3 className="font-bold text-sm mb-2 text-gray-800">Project Details</h3>
+                        <p className="text-xs text-gray-600 mb-3 leading-relaxed">
                           Designing a Logo and website for your Fashion Apparel Brand
                         </p>
-                        <div className="flex flex-wrap gap-2 mb-4">
-                          <Badge className="bg-blue-100 text-blue-700 text-xs font-medium px-3 py-1">
+                        <div className="flex flex-wrap gap-2 mb-3">
+                          <Badge className="bg-blue-100 text-blue-700 text-xs font-medium px-2 py-1">
                             UI/UX Designer
                           </Badge>
-                          <Badge className="bg-yellow-100 text-yellow-700 text-xs font-medium px-3 py-1">
+                          <Badge className="bg-yellow-100 text-yellow-700 text-xs font-medium px-2 py-1">
                             Logo Designer
                           </Badge>
                         </div>
-                        <div className="flex justify-between text-sm">
+                        <div className="flex justify-between text-xs">
                           <div>
                             <p className="text-gray-500 text-xs mb-1">Timeline</p>
                             <p className="font-semibold text-gray-800">20th July-30th Aug</p>
                           </div>
                           <div className="text-right">
                             <p className="text-gray-500 text-xs mb-1">Estimated Cost</p>
-                            <p className="font-bold text-lg text-gray-800">₹ 30,000</p>
+                            <p className="font-bold text-base text-gray-800">₹ 30,000</p>
                           </div>
                         </div>
                       </div>
@@ -463,17 +450,17 @@ export default function Home() {
                   </div>
                   {/* Center Line with Icon */}
                   <div className="absolute left-1/2 transform -translate-x-1/2 z-10">
-                    <div className="w-14 h-14 bg-[#F1AB13] rounded-full flex items-center justify-center shadow-lg">
-                      <FileText className="w-7 h-7 text-white" />
+                    <div className="w-12 h-12 bg-[#F1AB13] rounded-full flex items-center justify-center shadow-lg">
+                      <FileText className="w-6 h-6 text-white" />
                     </div>
                   </div>
                   {/* Right Side - Content */}
                   <div className="w-1/2 pl-16">
                     <div className="max-w-md">
-                      <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                      <h3 className="text-xl font-bold text-gray-800 mb-3">
                         <span className="text-[#F1AB13] mr-2">1.</span>Post a Project
                       </h3>
-                      <p className="text-lg text-gray-600 leading-relaxed">
+                      <p className="text-base text-gray-600 leading-relaxed">
                         Describe your project, set your budget, and specify the skills you need.
                       </p>
                     </div>
@@ -484,74 +471,61 @@ export default function Home() {
               <div className="relative">
                 {/* Mobile Layout */}
                 <div className="lg:hidden">
-                  <div className="flex flex-col items-center text-center space-y-6">
+                  <div className="flex flex-col items-center text-center space-y-3">
                     {/* Icon */}
-                    <div className="w-12 h-12 md:w-14 md:h-14 bg-[#F1AB13] rounded-full flex items-center justify-center shadow-lg">
-                      <Users className="w-6 h-6 md:w-7 md:h-7 text-white" />
+                    <div className="w-10 h-10 md:w-12 md:h-12 bg-[#F1AB13] rounded-full flex items-center justify-center shadow-lg">
+                      <Users className="w-5 h-5 md:w-6 md:h-6 text-white" />
                     </div>
                     {/* Content */}
                     <div className="max-w-md">
-                      <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-3 md:mb-4">
+                      <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-2 md:mb-3">
                         <span className="text-[#F1AB13] mr-2">2.</span>Get Matched
                       </h3>
-                      <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-6">
+                      <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-3">
                         We match you with vetted <span className="font-semibold">Freelance Teams</span> or{" "}
                         <span className="font-semibold">Skilled individuals</span> that fits your requirements.
                       </p>
                     </div>
                     {/* Visual */}
-                    <div className="relative w-full h-[300px] md:h-[400px] flex items-center justify-center">
-                      <Image
-                        src="/ellipse-28-1.png"
-                        alt="Background ellipse"
-                        width={250}
-                        height={250}
-                        className="absolute -top-20 -left-20 w-[200px] h-[200px] md:w-[350px] md:h-[350px] object-contain opacity-80 blur-lg z-0"
-                      />
-                      <Image
-                        src="/ellipse-30-1.png"
-                        alt="Background ellipse"
-                        width={250}
-                        height={250}
-                        className="absolute -bottom-20 -right-20 w-[200px] h-[200px] md:w-[350px] md:h-[350px] object-contain opacity-80 blur-lg z-0"
-                      />
-                      <div className="relative z-10 w-72 md:w-80 bg-white/30 rounded-xl shadow-xl p-4 md:p-5 border border-[#F1AB13] backdrop-blur-lg">
-                        <div className="flex items-center space-x-3 mb-4">
-                          <div className="flex -space-x-2">
-                            <div className="w-8 h-8 md:w-9 md:h-9 rounded-full overflow-hidden border-2 border-white">
+                    <div className="relative w-full h-[200px] md:h-[250px] flex items-center justify-center">
+              
+                      <div className="relative z-10 w-64 md:w-72 bg-white/30 rounded-xl shadow-xl p-3 md:p-4 border border-[#F1AB13] backdrop-blur-lg">
+                        <div className="flex items-center space-x-2 mb-3">
+                          <div className="flex -space-x-1">
+                            <div className="w-6 h-6 md:w-7 md:h-7 rounded-full overflow-hidden border-2 border-white">
                               <Image
                                 src="/ved-sharma.jpg"
                                 alt="Team member"
-                                width={36}
-                                height={36}
+                                width={28}
+                                height={28}
                                 className="w-full h-full object-cover"
                               />
                             </div>
-                            <div className="w-8 h-8 md:w-9 md:h-9 rounded-full overflow-hidden border-2 border-white">
+                            <div className="w-6 h-6 md:w-7 md:h-7 rounded-full overflow-hidden border-2 border-white">
                               <Image
                                 src="/jiya-gupta.jpg"
                                 alt="Team member"
-                                width={36}
-                                height={36}
+                                width={28}
+                                height={28}
                                 className="w-full h-full object-cover"
                               />
                             </div>
-                            <div className="w-8 h-8 md:w-9 md:h-9 rounded-full overflow-hidden border-2 border-white">
+                            <div className="w-6 h-6 md:w-7 md:h-7 rounded-full overflow-hidden border-2 border-white">
                               <Image
                                 src="/asian-man.png"
                                 alt="Team member"
-                                width={36}
-                                height={36}
+                                width={28}
+                                height={28}
                                 className="w-full h-full object-cover"
                               />
                             </div>
                           </div>
                           <div>
-                            <p className="text-xs md:text-sm font-semibold text-gray-800">3 Matches found</p>
+                            <p className="text-xs font-semibold text-gray-800">3 Matches found</p>
                             <p className="text-xs text-gray-500">Based on your requirements</p>
                           </div>
                         </div>
-                        <h3 className="font-bold text-sm md:text-base mb-4 text-gray-800">Team ALPHA</h3>
+                        <h3 className="font-bold text-xs md:text-sm mb-3 text-gray-800">Team ALPHA</h3>
                         <div className="flex justify-between items-center">
                           <div>
                             <p className="text-xs text-gray-500 mb-1">Completed Projects</p>
@@ -576,10 +550,10 @@ export default function Home() {
                     <div className="max-w-md ml-auto">
                       {" "}
                       {/* Use ml-auto to push content to the right within its half-width */}
-                      <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                      <h3 className="text-xl font-bold text-gray-800 mb-3">
                         <span className="text-[#F1AB13] mr-2">2.</span>Get Matched
                       </h3>
-                      <p className="text-lg text-gray-600 leading-relaxed">
+                      <p className="text-base text-gray-600 leading-relaxed">
                         We match you with vetted <span className="font-semibold">Freelance Teams</span> or{" "}
                         <span className="font-semibold">Skilled individuals</span> that fits your requirements.
                       </p>
@@ -587,64 +561,51 @@ export default function Home() {
                   </div>
                   {/* Center Line with Icon */}
                   <div className="absolute left-1/2 transform -translate-x-1/2 z-10">
-                    <div className="w-14 h-14 bg-[#F1AB13] rounded-full flex items-center justify-center shadow-lg">
-                      <Users className="w-7 h-7 text-white" />
+                    <div className="w-12 h-12 bg-[#F1AB13] rounded-full flex items-center justify-center shadow-lg">
+                      <Users className="w-6 h-6 text-white" />
                     </div>
                   </div>
                   {/* Left Side - Visual (now on right) */}
                   <div className="w-1/2 flex justify-center pl-8">
-                    <div className="relative w-full h-[400px] flex items-center justify-center">
-                      <Image
-                        src="/ellipse-28-1.png"
-                        alt="Background ellipse"
-                        width={250}
-                        height={250}
-                        className="absolute -top-20 -left-20 w-[200px] h-[200px] md:w-[350px] md:h-[350px] object-contain opacity-80 blur-lg z-0"
-                      />
-                      <Image
-                        src="/ellipse-30-1.png"
-                        alt="Background ellipse"
-                        width={250}
-                        height={250}
-                        className="absolute -bottom-20 -right-20 w-[200px] h-[200px] md:w-[350px] md:h-[350px] object-contain opacity-80 blur-lg z-0"
-                      />
-                      <div className="relative z-10 w-92 bg-white/30 rounded-xl shadow-xl p-5 border border-[#F1AB13] backdrop-blur-lg">
-                        <div className="flex items-center space-x-3 mb-4">
-                          <div className="flex -space-x-2">
-                            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full overflow-hidden border-2 border-white">
+                    <div className="relative w-full h-[250px] flex items-center justify-center">
+                      
+                      <div className="relative z-10 w-80 bg-white/30 rounded-xl shadow-xl p-4 border border-[#F1AB13] backdrop-blur-lg">
+                        <div className="flex items-center space-x-2 mb-3">
+                          <div className="flex -space-x-1">
+                            <div className="w-7 h-7 rounded-full overflow-hidden border-2 border-white">
                               <Image
                                 src="/ved-sharma.jpg"
                                 alt="Team member"
-                                width={40}
-                                height={40}
+                                width={28}
+                                height={28}
                                 className="w-full h-full object-cover"
                               />
                             </div>
-                            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full overflow-hidden border-2 border-white">
+                            <div className="w-7 h-7 rounded-full overflow-hidden border-2 border-white">
                               <Image
                                 src="/jiya-gupta.jpg"
                                 alt="Team member"
-                                width={40}
-                                height={40}
+                                width={28}
+                                height={28}
                                 className="w-full h-full object-cover"
                               />
                             </div>
-                            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full overflow-hidden border-2 border-white">
+                            <div className="w-7 h-7 rounded-full overflow-hidden border-2 border-white">
                               <Image
                                 src="/asian-man.png"
                                 alt="Team member"
-                                width={40}
-                                height={40}
+                                width={28}
+                                height={28}
                                 className="w-full h-full object-cover"
                               />
                             </div>
                           </div>
                           <div>
-                            <p className="text-sm font-semibold text-gray-800">3 Matches found</p>
+                            <p className="text-xs font-semibold text-gray-800">3 Matches found</p>
                             <p className="text-xs text-gray-500">Based on your requirements</p>
                           </div>
                         </div>
-                        <h3 className="font-bold text-base mb-4 text-gray-800">Team ALPHA</h3>
+                        <h3 className="font-bold text-sm mb-3 text-gray-800">Team ALPHA</h3>
                         <div className="flex justify-between items-center">
                           <div>
                             <p className="text-xs text-gray-500 mb-1">Completed Projects</p>
@@ -667,57 +628,44 @@ export default function Home() {
               <div className="relative">
                 {/* Mobile Layout */}
                 <div className="lg:hidden">
-                  <div className="flex flex-col items-center text-center space-y-6">
+                  <div className="flex flex-col items-center text-center space-y-3">
                     {/* Icon */}
-                    <div className="w-12 h-12 md:w-14 md:h-14 bg-[#F1AB13] rounded-full flex items-center justify-center shadow-lg">
-                      <Handshake className="w-6 h-6 md:w-7 md:h-7 text-white" />
+                    <div className="w-10 h-10 md:w-12 md:h-12 bg-[#F1AB13] rounded-full flex items-center justify-center shadow-lg">
+                      <Handshake className="w-5 h-5 md:w-6 md:h-6 text-white" />
                     </div>
                     {/* Content */}
                     <div className="max-w-md">
-                      <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-3 md:mb-4">
+                      <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-2 md:mb-3">
                         <span className="text-[#F1AB13] mr-2">3.</span>Collaborate
                       </h3>
-                      <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-6">
+                      <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-3">
                         Work together seamlessly with built-in communication tools and project management features.
                       </p>
                     </div>
                     {/* Visual */}
-                    <div className="relative w-full h-[300px] md:h-[400px] flex items-center justify-center">
-                      <Image
-                        src="/ellipse-28-1.png"
-                        alt="Background ellipse"
-                        width={250}
-                        height={250}
-                        className="absolute -top-20 -left-20 w-[200px] h-[200px] md:w-[350px] md:h-[350px] object-contain opacity-80 blur-lg z-0"
-                      />
-                      <Image
-                        src="/ellipse-30-1.png"
-                        alt="Background ellipse"
-                        width={250}
-                        height={250}
-                        className="absolute -bottom-20 -right-20 w-[200px] h-[200px] md:w-[350px] md:h-[350px] object-contain opacity-80 blur-lg z-0"
-                      />
-                      <div className="relative z-10 w-72 md:w-80 bg-white/30 rounded-xl shadow-xl p-4 md:p-5 border border-[#F1AB13] backdrop-blur-lg">
-                        <h3 className="font-bold text-sm md:text-base mb-2 md:mb-3 text-gray-800">Project Details</h3>
-                        <p className="text-xs md:text-sm text-gray-600 mb-3 md:mb-4 leading-relaxed">
+                    <div className="relative w-full h-[200px] md:h-[250px] flex items-center justify-center">
+                     
+                      <div className="relative z-10 w-64 md:w-72 bg-white/30 rounded-xl shadow-xl p-3 md:p-4 border border-[#F1AB13] backdrop-blur-lg">
+                        <h3 className="font-bold text-xs md:text-sm mb-2 text-gray-800">Project Details</h3>
+                        <p className="text-xs text-gray-600 mb-2 md:mb-3 leading-relaxed">
                           Designing a Logo and website for your Fashion Apparel Brand
                         </p>
-                        <div className="flex flex-wrap gap-2 mb-3 md:mb-4">
-                          <Badge className="bg-blue-100 text-blue-700 text-xs font-medium px-2 md:px-3 py-1">
+                        <div className="flex flex-wrap gap-1 mb-2 md:mb-3">
+                          <Badge className="bg-blue-100 text-blue-700 text-xs font-medium px-2 py-1">
                             UI/UX Designer
                           </Badge>
-                          <Badge className="bg-yellow-100 text-yellow-700 text-xs font-medium px-2 md:px-3 py-1">
+                          <Badge className="bg-yellow-100 text-yellow-700 text-xs font-medium px-2 py-1">
                             Logo Designer
                           </Badge>
                         </div>
-                        <div className="flex justify-between text-xs md:text-sm">
+                        <div className="flex justify-between text-xs">
                           <div>
                             <p className="text-gray-500 text-xs mb-1">Timeline</p>
                             <p className="font-semibold text-gray-800">20th July-30th Aug</p>
                           </div>
                           <div className="text-right">
                             <p className="text-gray-500 text-xs mb-1">Estimated Cost</p>
-                            <p className="font-bold text-base md:text-lg text-gray-800">₹ 30,000</p>
+                            <p className="font-bold text-sm md:text-base text-gray-800">₹ 30,000</p>
                           </div>
                         </div>
                       </div>
@@ -728,42 +676,29 @@ export default function Home() {
                 <div className="hidden lg:flex items-center">
                   {/* Left Side - Visual */}
                   <div className="w-1/2 flex justify-center pr-8">
-                    <div className="relative w-full h-[400px] flex items-center justify-center">
-                      <Image
-                        src="/ellipse-28-1.png"
-                        alt="Background ellipse"
-                        width={250}
-                        height={250}
-                        className="absolute -top-20 -left-20 w-[200px] h-[200px] md:w-[350px] md:h-[350px] object-contain opacity-80 blur-lg z-0"
-                      />
-                      <Image
-                        src="/ellipse-30-1.png"
-                        alt="Background ellipse"
-                        width={250}
-                        height={250}
-                        className="absolute -bottom-20 -right-20 w-[200px] h-[200px] md:w-[350px] md:h-[350px] object-contain opacity-80 blur-lg z-0"
-                      />
-                      <div className="relative z-10 w-92 bg-white/30 rounded-xl shadow-xl p-5 border border-[#F1AB13] backdrop-blur-lg">
-                        <h3 className="font-bold text-base mb-3 text-gray-800">Project Details</h3>
-                        <p className="text-sm text-gray-600 mb-4 leading-relaxed">
+                    <div className="relative w-full h-[250px] flex items-center justify-center">
+                     
+                      <div className="relative z-10 w-80 bg-white/30 rounded-xl shadow-xl p-4 border border-[#F1AB13] backdrop-blur-lg">
+                        <h3 className="font-bold text-sm mb-2 text-gray-800">Project Details</h3>
+                        <p className="text-xs text-gray-600 mb-3 leading-relaxed">
                           Designing a Logo and website for your Fashion Apparel Brand
                         </p>
-                        <div className="flex flex-wrap gap-2 mb-4">
-                          <Badge className="bg-blue-100 text-blue-700 text-xs font-medium px-3 py-1">
+                        <div className="flex flex-wrap gap-2 mb-3">
+                          <Badge className="bg-blue-100 text-blue-700 text-xs font-medium px-2 py-1">
                             UI/UX Designer
                           </Badge>
-                          <Badge className="bg-yellow-100 text-yellow-700 text-xs font-medium px-3 py-1">
+                          <Badge className="bg-yellow-100 text-yellow-700 text-xs font-medium px-2 py-1">
                             Logo Designer
                           </Badge>
                         </div>
-                        <div className="flex justify-between text-sm">
+                        <div className="flex justify-between text-xs">
                           <div>
                             <p className="text-gray-500 text-xs mb-1">Timeline</p>
                             <p className="font-semibold text-gray-800">20th July-30th Aug</p>
                           </div>
                           <div className="text-right">
                             <p className="text-gray-500 text-xs mb-1">Estimated Cost</p>
-                            <p className="font-bold text-lg text-gray-800">₹ 30,000</p>
+                            <p className="font-bold text-base text-gray-800">₹ 30,000</p>
                           </div>
                         </div>
                       </div>
@@ -771,17 +706,17 @@ export default function Home() {
                   </div>
                   {/* Center Line with Icon */}
                   <div className="absolute left-1/2 transform -translate-x-1/2 z-10">
-                    <div className="w-12 h-12 md:w-14 md:h-14 bg-[#F1AB13] rounded-full flex items-center justify-center shadow-lg">
-                      <Handshake className="w-6 h-6 md:w-7 md:h-7 text-white" />
+                    <div className="w-12 h-12 bg-[#F1AB13] rounded-full flex items-center justify-center shadow-lg">
+                      <Handshake className="w-6 h-6 text-white" />
                     </div>
                   </div>
                   {/* Right Side - Content */}
                   <div className="w-1/2 pl-16">
                     <div className="max-w-md">
-                      <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                      <h3 className="text-xl font-bold text-gray-800 mb-3">
                         <span className="text-[#F1AB13] mr-2">3.</span>Collaborate
                       </h3>
-                      <p className="text-lg text-gray-600 leading-relaxed">
+                      <p className="text-base text-gray-600 leading-relaxed">
                         Work together seamlessly with built-in communication tools and project management features.
                       </p>
                     </div>
@@ -792,57 +727,44 @@ export default function Home() {
               <div className="relative">
                 {/* Mobile Layout */}
                 <div className="lg:hidden">
-                  <div className="flex flex-col items-center text-center space-y-6">
+                  <div className="flex flex-col items-center text-center space-y-3">
                     {/* Icon */}
-                    <div className="w-12 h-12 md:w-14 md:h-14 bg-[#F1AB13] rounded-full flex items-center justify-center shadow-lg">
-                      <Shield className="w-6 h-6 md:w-7 md:h-7 text-white" />
+                    <div className="w-10 h-10 md:w-12 md:h-12 bg-[#F1AB13] rounded-full flex items-center justify-center shadow-lg">
+                      <Shield className="w-5 h-5 md:w-6 md:h-6 text-white" />
                     </div>
                     {/* Content */}
                     <div className="max-w-md">
-                      <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-3 md:mb-4">
+                      <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-2 md:mb-3">
                         <span className="text-[#F1AB13] mr-2">4.</span>Pay Securely
                       </h3>
-                      <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-6">
+                      <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-3">
                         Release payments safely through our escrow system. Pay only when you're satisfied with the work.
                       </p>
                     </div>
                     {/* Visual */}
-                    <div className="relative w-full h-[300px] md:h-[400px] flex items-center justify-center">
-                      <Image
-                        src="/ellipse-28-1.png"
-                        alt="Background ellipse"
-                        width={250}
-                        height={250}
-                        className="absolute -top-20 -left-20 w-[200px] h-[200px] md:w-[350px] md:h-[350px] object-contain opacity-80 blur-lg z-0"
-                      />
-                      <Image
-                        src="/ellipse-30-1.png"
-                        alt="Background ellipse"
-                        width={250}
-                        height={250}
-                        className="absolute -bottom-20 -right-20 w-[200px] h-[200px] md:w-[350px] md:h-[350px] object-contain opacity-80 blur-lg z-0"
-                      />
-                      <div className="relative z-10 w-72 md:w-80 bg-white/30 rounded-xl shadow-xl p-4 md:p-5 border border-[#F1AB13] backdrop-blur-lg">
-                        <h3 className="font-bold text-sm md:text-base mb-2 md:mb-3 text-gray-800">Project Details</h3>
-                        <p className="text-xs md:text-sm text-gray-600 mb-3 md:mb-4 leading-relaxed">
+                    <div className="relative w-full h-[200px] md:h-[250px] flex items-center justify-center">
+                     
+                      <div className="relative z-10 w-64 md:w-72 bg-white/30 rounded-xl shadow-xl p-3 md:p-4 border border-[#F1AB13] backdrop-blur-lg">
+                        <h3 className="font-bold text-xs md:text-sm mb-2 text-gray-800">Project Details</h3>
+                        <p className="text-xs text-gray-600 mb-2 md:mb-3 leading-relaxed">
                           Designing a Logo and website for your Fashion Apparel Brand
                         </p>
-                        <div className="flex flex-wrap gap-2 mb-3 md:mb-4">
-                          <Badge className="bg-blue-100 text-blue-700 text-xs font-medium px-2 md:px-3 py-1">
+                        <div className="flex flex-wrap gap-1 mb-2 md:mb-3">
+                          <Badge className="bg-blue-100 text-blue-700 text-xs font-medium px-2 py-1">
                             UI/UX Designer
                           </Badge>
-                          <Badge className="bg-yellow-100 text-yellow-700 text-xs font-medium px-2 md:px-3 py-1">
+                          <Badge className="bg-yellow-100 text-yellow-700 text-xs font-medium px-2 py-1">
                             Logo Designer
                           </Badge>
                         </div>
-                        <div className="flex justify-between text-xs md:text-sm">
+                        <div className="flex justify-between text-xs">
                           <div>
                             <p className="text-gray-500 text-xs mb-1">Timeline</p>
                             <p className="font-semibold text-gray-800">20th July-30th Aug</p>
                           </div>
                           <div className="text-right">
                             <p className="text-gray-500 text-xs mb-1">Estimated Cost</p>
-                            <p className="font-bold text-base md:text-lg text-gray-800">₹ 30,000</p>
+                            <p className="font-bold text-sm md:text-base text-gray-800">₹ 30,000</p>
                           </div>
                         </div>
                       </div>
@@ -856,58 +778,45 @@ export default function Home() {
                     <div className="max-w-md ml-auto">
                       {" "}
                       {/* Use ml-auto to push content to the right within its half-width */}
-                      <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                      <h3 className="text-xl font-bold text-gray-800 mb-3">
                         <span className="text-[#F1AB13] mr-2">4.</span>Pay Securely
                       </h3>
-                      <p className="text-lg text-gray-600 leading-relaxed">
+                      <p className="text-base text-gray-600 leading-relaxed">
                         Release payments safely through our escrow system. Pay only when you're satisfied with the work.
                       </p>
                     </div>
                   </div>
                   {/* Center Line with Icon */}
                   <div className="absolute left-1/2 transform -translate-x-1/2 z-10">
-                    <div className="w-14 h-14 bg-[#F1AB13] rounded-full flex items-center justify-center shadow-lg">
-                      <Shield className="w-7 h-7 text-white" />
+                    <div className="w-12 h-12 bg-[#F1AB13] rounded-full flex items-center justify-center shadow-lg">
+                      <Shield className="w-6 h-6 text-white" />
                     </div>
                   </div>
                   {/* Left Side - Visual (now on right) */}
                   <div className="w-1/2 flex justify-center pl-8">
-                    <div className="relative w-full h-[400px] flex items-center justify-center">
-                      <Image
-                        src="/ellipse-28-1.png"
-                        alt="Background ellipse"
-                        width={250}
-                        height={250}
-                        className="absolute -top-20 -left-20 w-[200px] h-[200px] md:w-[350px] md:h-[350px] object-contain opacity-80 blur-lg z-0"
-                      />
-                      <Image
-                        src="/ellipse-30-1.png"
-                        alt="Background ellipse"
-                        width={250}
-                        height={250}
-                        className="absolute -bottom-20 -right-20 w-[200px] h-[200px] md:w-[350px] md:h-[350px] object-contain opacity-80 blur-lg z-0"
-                      />
-                      <div className="relative z-10 w-92 bg-white/30 rounded-xl shadow-xl p-5 border border-[#F1AB13] backdrop-blur-lg">
-                        <h3 className="font-bold text-base mb-3 text-gray-800">Project Details</h3>
-                        <p className="text-sm text-gray-600 mb-4 leading-relaxed">
+                    <div className="relative w-full h-[250px] flex items-center justify-center">
+                     
+                      <div className="relative z-10 w-80 bg-white/30 rounded-xl shadow-xl p-4 border border-[#F1AB13] backdrop-blur-lg">
+                        <h3 className="font-bold text-sm mb-2 text-gray-800">Project Details</h3>
+                        <p className="text-xs text-gray-600 mb-3 leading-relaxed">
                           Designing a Logo and website for your Fashion Apparel Brand
                         </p>
-                        <div className="flex flex-wrap gap-2 mb-4">
-                          <Badge className="bg-blue-100 text-blue-700 text-xs font-medium px-3 py-1">
+                        <div className="flex flex-wrap gap-2 mb-3">
+                          <Badge className="bg-blue-100 text-blue-700 text-xs font-medium px-2 py-1">
                             UI/UX Designer
                           </Badge>
-                          <Badge className="bg-yellow-100 text-yellow-700 text-xs font-medium px-3 py-1">
+                          <Badge className="bg-yellow-100 text-yellow-700 text-xs font-medium px-2 py-1">
                             Logo Designer
                           </Badge>
                         </div>
-                        <div className="flex justify-between text-sm">
+                        <div className="flex justify-between text-xs">
                           <div>
                             <p className="text-gray-500 text-xs mb-1">Timeline</p>
                             <p className="font-semibold text-gray-800">20th July-30th Aug</p>
                           </div>
                           <div className="text-right">
                             <p className="text-gray-500 text-xs mb-1">Estimated Cost</p>
-                            <p className="font-bold text-lg text-gray-800">₹ 30,000</p>
+                            <p className="font-bold text-base text-gray-800">₹ 30,000</p>
                           </div>
                         </div>
                       </div>
