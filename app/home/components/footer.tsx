@@ -10,12 +10,12 @@ export default function Footer() {
           {/* Logo and Description */}
           <div className="flex flex-col space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-[#F1AB13] to-[#E8A317] rounded-md flex items-center justify-center">
+              <div className="rounded-md flex items-center justify-center">
                 <Image
                   src="/HYVE.png"
                   alt="Logo"
-                  width={20}
-                  height={20}
+                  width={30}
+                  height={30}
                   className="object-contain"
                 />
               </div>

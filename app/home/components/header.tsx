@@ -64,12 +64,12 @@ export default function Header() {
     <header className="sticky top-0 h-15 relative z-50 flex items-center justify-between px-4 sm:px-6 py-3 bg-white shadow-sm">
       {/* Logo */}
       <Link href="/" className="flex items-center space-x-2">
-        <div className="w-8 h-8 bg-gradient-to-br from-[#F1AB13] to-[#E8A317] rounded-md flex items-center justify-center">
+        <div className="rounded-md flex items-center justify-center">
           <Image
             src="/HYVE.png"
             alt="Logo"
-            width={20}
-            height={20}
+            width={30}
+            height={30}
             className="object-contain"
           />
         </div>

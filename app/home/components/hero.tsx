@@ -985,7 +985,7 @@ export default function Home() {
                     <div className="text-center">
                       <Link href="https://staging.hyvefreelance.com/auth/login" passHref>
                         <Button
-                          className="bg-gradient-to-r from-[#F1AB13] via-[#FFD700] to-[#F1AB13] text-[#2D2D2D] px-16 py-4 rounded-lg text-lg font-semibold shadow-xl hover:from-[#FFD700] hover:to-[#F1AB13] transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl"
+                          className=" bg-gradient-to-r from-[#F9A825] to-[#FFD600] text-black font-semibold text-sm px-6 py-2 rounded-lg border border-yellow-400 shadow-md hover:brightness-105 transition"
                           asChild
                         >
                           <span>
@@ -1131,7 +1131,7 @@ export default function Home() {
                       <p className="text-gray-500 mb-6">Ideal for startups, product teams, agencies & service-based firms.</p>
                       <Link href="https://staging.hyvefreelance.com/auth/login" passHref>
                         <Button
-                          className="bg-gradient-to-r from-[#F1AB13] via-[#FFD700] to-[#F1AB13] text-[#2D2D2D] px-16 py-4 rounded-lg text-lg font-semibold shadow-xl hover:from-[#FFD700] hover:to-[#F1AB13] transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl"
+                          className="bg-gradient-to-r from-[#F9A825] to-[#FFD600] text-black font-semibold text-sm px-6 py-2 rounded-lg border border-yellow-400 shadow-md hover:brightness-105 transition"
                           asChild
                         >
                           <span>
