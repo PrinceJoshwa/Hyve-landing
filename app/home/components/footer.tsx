@@ -25,7 +25,7 @@ export default function Footer() {
               India's first team-based freelancing platform built for
               collaboration, not just gigs.
             </p>
-            <div className="flex flex-col items-center md:items-start">
+            <div className="flex flex-col items-center md:items-start mt-6">
               Recognized by
               <Image
                 src="/startup.png"

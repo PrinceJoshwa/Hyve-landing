@@ -158,7 +158,10 @@ export default function Home() {
               alt="Team Card"
               width={208}
               height={80}
-              className="w-full h-auto object-contain drop-shadow-xl"
+              className="w-full h-auto object-contain drop-shadow-xl cursor-pointer"
+              onClick={() => {
+                window.location.href = "https://staging.hyvefreelance.com/auth/login";
+              }}
             />
             <div className="absolute bottom-12 bottom-12 sm:-bottom-13 sm:-right-50 -right-28 w-30 h-12 sm:w-50 sm:h-50 overflow-hidden ">
               <Image src="/Vector.png" alt="arrow" width={1000} height={1000} className="object-cover" />
@@ -966,17 +969,43 @@ export default function Home() {
                       <div className="bg-white shadow-lg rounded-3xl p-8 border border-gray-100">
                         <h3 className="text-2xl font-bold text-[#2D2D2D] mb-6">Your Skills</h3>
                         <div className="flex flex-wrap gap-3">
-                          {["UI/UX Design", "Figma", "React", "User Research", "Wireframing", "Prototyping", 
-                            "UI/UX Design", "Figma", "React", "User Research", "Wireframing", "Prototyping",
-                            "UI/UX Design", "Figma", "React", "User Research", "Wireframing", "Prototyping",
-                          ].map((skill, i) => (
-                            <span
-                              key={i}
-                              className="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full text-sm font-medium shadow-sm hover:shadow-md transition-shadow duration-200"
-                            >
-                              {skill}
-                            </span>
-                          ))}
+                          {[
+                            { skill: "UI/UX Design", category: "design" },
+                            { skill: "Figma", category: "design" },
+                            { skill: "Adobe XD", category: "design" },
+                            { skill: "Sketch", category: "design" },
+                            { skill: "Wireframing", category: "design" },
+                            { skill: "Prototyping", category: "design" },
+                            { skill: "React", category: "tech" },
+                            { skill: "JavaScript", category: "tech" },
+                            { skill: "TypeScript", category: "tech" },
+                            { skill: "Node.js", category: "tech" },
+                            { skill: "Python", category: "tech" },
+                            { skill: "HTML/CSS", category: "tech" },
+                            { skill: "User Research", category: "research" },
+                            { skill: "User Testing", category: "research" },
+                            { skill: "Analytics", category: "research" },
+                            { skill: "MongoDB", category: "database" },
+                            { skill: "PostgreSQL", category: "database" },
+                            { skill: "AWS", category: "cloud" },
+                            { skill: "Docker", category: "cloud" }
+                          ].map((item, i) => {
+                            const categoryColors = {
+                              design: "bg-purple-100 text-purple-800",
+                              tech: "bg-blue-100 text-blue-800",
+                              research: "bg-green-100 text-green-800",
+                              database: "bg-orange-100 text-orange-800",
+                              cloud: "bg-cyan-100 text-cyan-800"
+                            };
+                            return (
+                              <span
+                                key={i}
+                                className={`${categoryColors[item.category]} px-4 py-2 rounded-full text-sm font-medium shadow-sm hover:shadow-md transition-shadow duration-200`}
+                              >
+                                {item.skill}
+                              </span>
+                            );
+                          })}
                         </div>
                       </div>
                     </div>

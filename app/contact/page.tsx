@@ -23,7 +23,7 @@ export default function Contact() {
           <div className="bg-white rounded-3xl shadow-2xl p-4 sm:p-8 border border-yellow-100">
             <div className="w-full h-[600px]">
               <iframe
-                src="https://tally.so/embed/mRQEVd?alignLeft=1&hideTitle=1&transparentBackground=1"
+                src="https://tally.so/embed/wdGMOd?alignLeft=1&hideTitle=1&transparentBackground=1&hideGreeting=1"
                 width="100%"
                 height="100%"
                 frameBorder="0"
