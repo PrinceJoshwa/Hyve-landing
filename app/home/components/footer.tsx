@@ -10,10 +10,16 @@ export default function Footer() {
           {/* Logo and Description */}
           <div className="flex flex-col space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="bg-[#F1AB13] w-8 h-8 flex items-center justify-center rounded-md text-black font-bold">
-                H
+              <div className="w-8 h-8 bg-gradient-to-br from-[#F1AB13] to-[#E8A317] rounded-md flex items-center justify-center">
+                <Image
+                  src="/HYVE.png"
+                  alt="Logo"
+                  width={20}
+                  height={20}
+                  className="object-contain"
+                />
               </div>
-              <span className="text-xl font-semibold">HYVE</span>
+              <span className="text-2xl font-semibold text-white">HYVE</span>
             </div>
             <p className="text-gray-400 text-sm">
               India's first team-based freelancing platform built for
