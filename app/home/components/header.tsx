@@ -70,7 +70,7 @@
 //             alt="Logo"
 //             width={30}
 //             height={30}
-//             className="object-contain w-12 h-12"
+//             className="object-contain"
 //           />
 //         </div>
 //         <span className="text-xl sm:text-2xl font-bold text-black">HYVE</span>
@@ -201,6 +201,7 @@
 //     </header>
 //   );
 // }
+
 
 "use client"
 
@@ -410,3 +411,4 @@ export default function Header() {
     </header>
   )
 }
+
