@@ -120,7 +120,7 @@ export default function Home() {
         {/* Hero Section with Floating Cards */}
         <div className="relative flex justify-center items-center min-h-[400px] sm:min-h-[500px] px-4 sm:px-6 ">
           {/* Background Yellow Circle */}
-          <div className="absolute w-[350px] h-[350px] sm:w-[450px] sm:h-[450px] -z-10">
+          {/* <div className="absolute w-[350px] h-[350px] sm:w-[450px] sm:h-[450px] -z-10">
             <Image
               src="/ellipse-30-1.png"
               alt="Background circle"
@@ -128,7 +128,7 @@ export default function Home() {
               height={600}
               className="w-full h-full object-contain"
             />
-          </div>
+          </div> */}
 
           {/* Ved Sharma Card - Top Left */}
           <div className="float absolute top-0 sm:-top-18 sm:left-[15%] left-[0%] w-40 sm:w-70 z-10">
