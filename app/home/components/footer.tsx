@@ -113,8 +113,8 @@ export default function Footer() {
             <p className="text-gray-400 text-sm">
               © 2025 HYVE. All rights reserved.
             </p>
-            <div className="flex items-center space-x-6">
-              <h4 className="text-sm mr-6">Follow Us</h4>
+            <div className="flex items-center space-x-4">
+              <h4 className="text-sm mr-3">Follow Us</h4>
               <Link
                 href="https://www.instagram.com/hyvefreelance"
                 target="_blank"

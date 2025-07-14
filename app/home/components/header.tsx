@@ -276,7 +276,7 @@ export default function Header() {
     label: string
     onClick?: () => void
   }> = [
-    { href: "/about", label: "About" },
+    
     {
       href: "/#for-freelancers",
       label: "For freelancers",
@@ -287,8 +287,11 @@ export default function Header() {
       label: "For companies",
       onClick: () => scrollToSection("for-companies"),
     },
-    { href: "/blog", label: "Blog" }, // Reverted to Blog
-    { href: "/contact", label: "Contact" },
+     { href: "/blog", label: "Blog" },
+    { href: "/contact", label: "Support" },
+    // Reverted to Blog
+    { href: "/about", label: "About" },
+   
   ]
 
   return (

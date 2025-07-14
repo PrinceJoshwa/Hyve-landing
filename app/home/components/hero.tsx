@@ -178,7 +178,7 @@ export default function Home() {
               alt="Ved Sharma - Front End Developer"
               width={208}
               height={80}
-              className="w-full h-auto object-contain drop-shadow-[0_0_15px_rgba(241,171,19,1)]"
+              className="w-full h-auto object-contain "
             />
             <div className="absolute bottom-12 sm:bottom-21 left-4 sm:left-10 w-12 h-12 sm:w-22 sm:h-22 rounded-full overflow-hidden border-2 border-[#F1AB13]">
               <Image
@@ -218,7 +218,7 @@ export default function Home() {
               alt="Jiya Gupta - Graphic Designer"
               width={208}
               height={80}
-              className="w-full h-auto object-contain drop-shadow-[0_0_15px_rgba(241,171,19,1)]"
+              className="w-full h-auto object-contain "
             />
             <div className="absolute bottom-12 sm:bottom-22 right-8 w-12 h-12 sm:w-22 sm:h-22 rounded-full overflow-hidden border-2 border-[#F1AB13]">
               <Image
@@ -233,14 +233,14 @@ export default function Home() {
 
           {/* Central Hero Image */}
           <div
-            className="relative z-0 top-5 flex items-center justify-center rounded-full drop-shadow-[0_0_15px_rgba(241,171,19,1)] bg-yellow-rings"
+            className="relative z-0 top-5 flex items-center justify-center rounded-full drop-shadow-[0_0_25px_rgba(253,216,53,1)] bg-yellow-rings"
           >
             <Image
               src="/hyve-hero-img.png"
               alt="Person with laptop on beanbag"
               width={320}
               height={320}
-              className="w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] object-contain"
+              className="w-[300px] h-[300px] sm:w-[600px] sm:h-[600px] object-contain"
             />
           </div>
 
@@ -252,7 +252,7 @@ export default function Home() {
               alt="Rahul Shetty - UI/UX Designer"
               width={208}
               height={100}
-              className="w-full h-auto object-contain z-30 drop-shadow-[0_0_15px_rgba(241,171,19,1)]"
+              className="w-full h-auto object-contain z-30"
             />
           </div>
 
@@ -263,7 +263,7 @@ export default function Home() {
               alt="Total Earnings ₹3,00,000"
               width={240}
               height={160}
-              className="w-full h-auto object-contain z-30 drop-shadow-[0_0_15px_rgba(241,171,19,1)]"
+              className="w-full h-auto object-contain z-30 "
             />
             <div className="absolute top-15 right-2 sm:right-5 w-12 h-12 sm:w-18 sm:h-18 sm:top-23 rounded-full overflow-hidden border-2 border-[#F1AB13] z-30">
               <Image
@@ -283,7 +283,7 @@ export default function Home() {
               alt="Escrow Payment - Safe & Secured Protection"
               width={224}
               height={60}
-              className="w-full h-auto object-contain drop-shadow-[0_0_15px_rgba(241,171,19,1)]"
+              className="w-full h-auto object-contain"
             />
             <div className="absolute -top-9 left-1 w-12 h-12 sm:w-18 sm:-top-20 sm:h-18 rounded-full bg-blue-400 overflow-hidden border-2 border-[#F1AB13] z-30">
               <Image
@@ -303,7 +303,7 @@ export default function Home() {
               alt="New Task Alert - Build website for D2C brand ₹30,000"
               width={208}
               height={80}
-              className="w-full h-auto object-contain drop-shadow-[0_0_15px_rgba(241,171,19,1)]"
+              className="w-full h-auto object-contain"
             />
           </div>
 

@@ -145,19 +145,43 @@
 
 .bg-yellow-rings {
   background: radial-gradient(
-    circle,
-    #ffd600 0%,
-    #ffd600 20%,
-    #ffca28 20%,
-    #ffca28 40%,
-    #ffb300 40%,
-    #ffb300 50%,
-    #ffa000 50%,
-    #ffb300 65%,
-    transparent 80%
-  );
+      circle at center,
+      #ffa000 0% /* Darkest inner */,
+      #ffa000 15%,
+      #ffb300 15% /* Lighter ring starts */,
+      #ffb300 35%,
+      rgba(255, 202, 40, 0.7) 35% /* Darker ring starts, 70% opaque */,
+      rgba(255, 202, 40, 0.7) 50%,
+      rgba(255, 214, 0, 0.1) 50% /* Lighter ring starts, now 10% opaque */,
+      rgba(255, 214, 0, 0.1) 65%,
+      transparent 85% /* Fade out */
+    ), repeating-linear-gradient(to right, #fdd835 1px, transparent 1px),
+    repeating-linear-gradient(to bottom, #fdd835 1px, transparent 1px);
+  background-size: 100% 100%, 20px 20px, 20px 20px;
+  background-position: 0 0, 0 0, 0 0;
+  background-color: #ffe082; /* Base color for the grid background */
   box-shadow: 0 0 60px 30px rgba(255, 193, 7, 0.4);
 }
+
+/* .bg-yellow-rings {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  border-radius: 9999px;
+  background: radial-gradient(
+    circle,
+    #f1ab13 0%,
+    #f1ab13 30%,
+    #f9cb39 30%,
+    #f9cb39 55%,
+    #f3cf45 55%,
+    #f3cf45 75%,
+    #fbee96 75%,
+    #fbee96 100%
+  );
+  z-index: 0;
+} */
+
 
 /* .bg-yellow-rings {
   position: absolute;
