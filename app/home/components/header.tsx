@@ -298,7 +298,7 @@ export default function Header() {
       {/* Logo */}
       <Link href="/" className="flex items-center space-x-2">
         <div className="rounded-md flex items-center justify-center">
-          <Image src="/HYVE.png" alt="Logo" width={30} height={30} className="object-contain w-12 h-12" />
+          <Image src="/HYVE.png" alt="Logo" width={30} height={30} className="object-contain w-10 h-10" />
         </div>
         <span className="text-xl sm:text-2xl font-bold text-black">HYVE</span>
       </Link>
