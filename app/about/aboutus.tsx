@@ -1,194 +1,174 @@
-"use client";
+"use client"
 
-import {
-  Globe,
-  Rocket,
-  Target,
-  Hexagon,
-  Circle,
-  Triangle,
-  Star,
-} from "lucide-react";
-import { useState } from "react";
-import { Card, CardContent } from "@/components/ui/card";
+import { Rocket, Target, Heart, Users, Handshake, Sparkles, MapPin, MessageSquareText } from "lucide-react"
+import { Card, CardContent } from "@/components/ui/card"
 
-const About = () => {
-  const [activeTab, setActiveTab] = useState("mission");
-
-  const aboutTabs = {
-    mission: {
-      icon: <Target className="w-6 h-6" />,
-      title: "Our Mission",
-      content:
-        "HYVE is India's first homegrown freelancing platform designed to address the unique challenges faced by Indian freelancers. Our mission is to empower freelancers and early-stage startups by providing a collaborative, transparent, and opportunity-rich marketplace where skilled professionals can connect, form teams, and grow together. Unlike foreign platforms that dominate the Indian market without catering to its specific needs, HYVE focuses on team-based work dynamics, ensuring freelancers break out of stagnancy and accelerate their careers while helping startups access affordable, high-quality talent.",
-    },
-    vision: {
-      icon: <Rocket className="w-6 h-6" />,
-      title: "Our Vision",
-      content:
-        "To become the go-to freelancing ecosystem in India, where individuals and teams thrive, startups find cost-effective talent solutions, and collaboration fuels innovation and long-term success. HYVE envisions a future where freelancing is not just a solo journey but a dynamic, team-driven experience tailored to the Indian market, creating sustainable career paths and impactful startup solutions.",
-    },
-    impact: {
-      icon: <Globe className="w-6 h-6" />,
-      title: "Our Impact",
-      content: <ImpactContent />,
-    },
-  };
-
+export default function AboutUsPage() {
   return (
-    <main className="bg-gradient-to-br from-yellow-50 to-white text-[#202124] relative overflow-hidden min-h-screen py-12 sm:py-20">
-      {/* Floating Shapes for visual interest */}
-      <Hexagon className="absolute top-[10%] left-[5%] w-16 h-16 text-yellow-200/30 floating animate-pulse" />
-      <Circle className="absolute top-[30%] right-[10%] w-12 h-12 text-yellow-300/30 floating-delayed animate-bounce" />
-      <Triangle className="absolute bottom-[20%] left-[15%] w-14 h-14 text-yellow-200/30 floating-more-delayed animate-spin-slow" />
-      <Star className="absolute bottom-[10%] right-[5%] w-10 h-10 text-yellow-300/30 floating animate-pulse-delayed" />
+    <main className="bg-[#FFFDFB] text-[#2D2D2D] relative overflow-hidden min-h-screen">
+      {/* Background Decorations */}
+      <div className="absolute top-[-5%] left-[-5%] w-64 h-64 bg-[#FFF4D6]/50 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+      <div className="absolute bottom-[-5%] right-[-5%] w-72 h-72 bg-[#FFF4D6]/50 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+      <div className="absolute top-[20%] right-[10%] w-48 h-48 bg-[#FFF4D6]/50 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
 
-      <div className="flex-grow px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
+      <div className="relative z-10 py-16 lg:py-24 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
           {/* Header Section */}
-          <div className="text-center text-gray-800 mb-12 lg:mb-16">
-            <h3 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4 lg:mb-6 text-[#2D2D2D] leading-tight animate-fade-in-up">
-              About{" "}
+          <div className="text-center text-[#2D2D2D] mb-16 lg:mb-24">
+            <span className="inline-flex items-center px-4 py-2 rounded-full bg-[#FFF4D6] text-[#F1AB13] text-sm font-medium mb-6">
+              <MapPin className="w-4 h-4 mr-2" /> IN Born in India, Built for India
+            </span>
+            <h1 className="text-5xl sm:text-4xl lg:text-6xl font-extrabold mb-6 leading-tight">
+              Born from the{" "}
               <span className="bg-gradient-to-r from-[#F1AB13] via-[#FFD700] to-[#F1AB13] bg-clip-text text-transparent">
-                HYVE
+                Indian Freelance Hustle
               </span>
-            </h3>
-            <p className="text-lg sm:text-xl lg:text-2xl leading-relaxed max-w-3xl mx-auto text-gray-700 animate-fade-in-up-delay">
-              At HYVE, our mission is to redefine freelancing by making it more
-              collaborative, secure, and rewarding. We empower freelancers to
-              work in teams, get fairly paid, and deliver high-quality projects
-              while helping businesses find skilled talent without the hassle.
+            </h1>
+            <p className="text-lg sm:text-xl lg:text-2xl leading-relaxed max-w-4xl mx-auto text-gray-700">
+              Built by freelancers who understand Indian challenges, HYVE aims to empower freelancers to work
+              collaboratively and grow sustainably in the digital economy.
             </p>
           </div>
 
-          {/* Interactive Tabs Section */}
-          <div className="bg-white rounded-3xl shadow-2xl p-4 sm:p-8 border border-yellow-100 animate-scale-in">
-            {/* Tab Buttons */}
-            <div className="sticky top-0 z-20 pb-4 sm:pb-6 bg-white rounded-t-3xl">
-              <div className="flex flex-wrap justify-center gap-3 sm:gap-6">
-                {Object.entries(aboutTabs).map(([key, { icon, title }]) => (
-                  <button
-                    key={key}
-                    onClick={() => setActiveTab(key)}
-                    className={`flex items-center px-5 sm:px-8 py-2.5 sm:py-3.5 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 whitespace-nowrap shadow-sm hover:shadow-md transform hover:-translate-y-1 ${
-                      activeTab === key
-                        ? "bg-gradient-to-r from-[#F1AB13] to-[#FFD700] text-white"
-                        : "bg-gray-100 text-gray-700 hover:bg-yellow-100"
-                    }`}
-                  >
-                    <span className="mr-2">{icon}</span>
-                    {title}
-                  </button>
-                ))}
+          {/* Main Content Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
+            {/* Left Column: Our Story & Features */}
+            <div className="space-y-8">
+              {/* Our Story Card */}
+              <Card className="bg-white rounded-3xl shadow-xl p-8 border border-gray-100">
+                <CardContent className="p-0">
+                  <div className="flex items-center mb-4">
+                    <Heart className="w-8 h-8 text-red-500 mr-3" /> {/* Keeping red for heart as per image */}
+                    <h2 className="text-3xl font-bold text-[#2D2D2D]">Our Story</h2>
+                  </div>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    HYVE was born from the frustration of talented Indian freelancers working in isolation, competing
+                    instead of collaborating. We saw brilliant designers, developers, and marketers struggling to find
+                    consistent work and grow beyond individual gigs.
+                    <br />
+                    <br />
+                    As freelancers ourselves, we experienced the challenges of project management, payment delays, and
+                    the constant hustle for the next gig. We knew there had to be a better way.
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Three Feature Sections */}
+              <div className="space-y-6">
+                <div className="flex items-start p-6 bg-orange-50 rounded-2xl shadow-sm">
+                  <div className="w-12 h-12 flex items-center justify-center bg-orange-100 rounded-full mr-4 flex-shrink-0">
+                    <Users className="w-6 h-6 text-orange-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-[#2D2D2D] mb-1">Collaboration Over Competition</h3>
+                    <p className="text-base text-gray-700">
+                      We believe freelancers achieve more when they work together, not against each other.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start p-6 bg-purple-50 rounded-2xl shadow-sm">
+                  <div className="w-12 h-12 flex items-center justify-center bg-purple-100 rounded-full mr-4 flex-shrink-0">
+                    <Handshake className="w-6 h-6 text-purple-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-[#2D2D2D] mb-1">Trust & Transparency</h3>
+                    <p className="text-base text-gray-700">
+                      Every interaction on HYVE is built on trust, fair pricing, and clear communication.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start p-6 bg-green-50 rounded-2xl shadow-sm">
+                  <div className="w-12 h-12 flex items-center justify-center bg-green-100 rounded-full mr-4 flex-shrink-0">
+                    <Sparkles className="w-6 h-6 text-green-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-[#2D2D2D] mb-1">Growth & Learning</h3>
+                    <p className="text-base text-gray-700">
+                      We're committed to helping every freelancer and startup grow and succeed together.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
-            {/* Content Area */}
-            <div className="pt-4 sm:pt-6 lg:pt-8">
-              {Object.entries(aboutTabs).map(([key, { content }]) => (
-                <div
-                  key={key}
-                  className={`transition-all duration-700 ease-in-out transform ${
-                    activeTab === key
-                      ? "opacity-100 translate-y-0 block"
-                      : "opacity-0 translate-y-4 hidden"
-                  }`}
-                >
-                  <Card className="bg-white border-0 shadow-none rounded-2xl p-4 md:p-8 text-center">
-                    <CardContent className="p-0">{content}</CardContent>
-                  </Card>
+            {/* Right Column: Mission & Vision Card */}
+            <Card className="bg-gradient-to-br from-[#F1AB13] to-[#FFD700] rounded-3xl shadow-xl p-8 text-white flex flex-col justify-between">
+              <CardContent className="p-0 space-y-10">
+                {/* Our Mission Section */}
+                <div>
+                  <div className="flex items-center mb-4">
+                    <Target className="w-8 h-8 text-white mr-3" />
+                    <h2 className="text-3xl font-bold">Our Mission</h2>
+                  </div>
+                  <p className="text-lg text-white/90 leading-relaxed">
+                    "To empower Indian freelancers through collaboration, creating sustainable careers and building the
+                    future of work in India."
+                  </p>
                 </div>
-              ))}
-            </div>
+
+                {/* Our Vision Section */}
+                <div>
+                  <div className="flex items-center mb-4">
+                    <Rocket className="w-8 h-8 text-white mr-3" />
+                    <h2 className="text-3xl font-bold">Our Vision</h2>
+                  </div>
+                  <p className="text-lg text-white/90 leading-relaxed">
+                    A future where freelancers thrive together, not alone. Where teams form naturally, projects flow
+                    seamlessly, and success is shared by all.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Quote Section */}
+          <div className="mt-20 lg:mt-28 bg-[#FFF4D6] rounded-3xl p-8 sm:p-12 text-center shadow-lg">
+            <MessageSquareText className="w-12 h-12 text-[#F1AB13] mx-auto mb-6" />
+            <p className="text-2xl sm:text-3xl font-bold text-[#2D2D2D] leading-relaxed mb-4">
+              {'"By Freelancers, For Freelancers — HYVE is built by those who\'ve lived the hustle."'}
+            </p>
+            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+              Every feature, every decision, every line of code comes from real freelancing experience. We're not just
+              building a platform; we're building a community.
+            </p>
           </div>
         </div>
       </div>
 
-      {/* Custom CSS for animations */}
+      {/* Custom CSS for background blobs animation */}
       <style jsx>{`
-        @keyframes fadeInFromBottom {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        .animate-fade-in-up {
-          animation: fadeInFromBottom 0.6s ease-out forwards;
-        }
-
-        .animate-fade-in-up-delay {
-          animation: fadeInFromBottom 0.6s ease-out 0.2s forwards;
-          opacity: 0;
-        }
-
-        .animate-scale-in {
-          animation: scaleIn 0.5s ease-out forwards;
-        }
-
-        @keyframes scaleIn {
-          from {
-            opacity: 0;
-            transform: scale(0.95);
-          }
-          to {
-            opacity: 1;
-            transform: scale(1);
-          }
-        }
-
-        .floating {
-          animation: float 6s ease-in-out infinite;
-        }
-
-        .floating-delayed {
-          animation: float 6s ease-in-out 2s infinite;
-        }
-
-        .floating-more-delayed {
-          animation: float 6s ease-in-out 4s infinite;
-        }
-
-        @keyframes float {
+        @keyframes blob {
           0% {
-            transform: translateY(0px);
+            transform: translate(0px, 0px) scale(1);
           }
-          50% {
-            transform: translateY(-20px);
+          33% {
+            transform: translate(30px, -50px) scale(1.1);
+          }
+          66% {
+            transform: translate(-20px, 20px) scale(0.9);
           }
           100% {
-            transform: translateY(0px);
+            transform: translate(0px, 0px) scale(1);
           }
         }
-
-        @keyframes spin-slow {
-          from {
-            transform: rotate(0deg);
-          }
-          to {
-            transform: rotate(360deg);
-          }
+        .animate-blob {
+          animation: blob 7s infinite cubic-bezier(0.6, 0.01, 0.3, 0.9);
         }
-
-        .animate-spin-slow {
-          animation: spin-slow 12s linear infinite;
+        .animation-delay-2000 {
+          animation-delay: 2s;
         }
-
-        .animate-pulse-delayed {
-          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) 1s infinite;
+        .animation-delay-4000 {
+          animation-delay: 4s;
         }
       `}</style>
     </main>
-  );
-};
+  )
+}
 
-// Impact Content Component
+// The ImpactContent component is kept here for reference, but not rendered in the current design
+// as it's not part of the provided image's layout.
 const ImpactContent = () => (
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
     {[
       {
         title: "For Indian Freelancers",
@@ -206,15 +186,15 @@ const ImpactContent = () => (
           "HYVE will redefine freelancing in India by shifting from solo gigs to structured team collaborations, creating an ecosystem where freelancers stand out, grow together, and boost their careers beyond traditional freelancing models dominated by foreign platforms.",
       },
     ].map((item, index) => (
-      <div
+      <Card
         key={index}
-        className="feature-card text-center p-4 md:p-6 rounded-lg border border-gray-200 hover:border-[#F5A623] transition-colors backdrop-blur-sm hover:bg-gradient-to-br from-white to-[#F5A623]/10"
+        className="feature-card p-6 rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300 bg-white hover:bg-yellow-50"
       >
-        <strong className="block text-gray-900 mb-3">{item.title}</strong>
-        <p className="text-gray-700">{item.content}</p>
-      </div>
+        <CardContent className="p-0">
+          <strong className="block text-[#2D2D2D] text-xl font-bold mb-2">{item.title}</strong>
+          <p className="text-gray-700 text-base leading-relaxed">{item.content}</p>
+        </CardContent>
+      </Card>
     ))}
   </div>
-);
-
-export default About;
+)
