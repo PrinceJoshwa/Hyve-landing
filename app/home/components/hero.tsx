@@ -122,7 +122,7 @@ export default function Home() {
           {/* Background Yellow Circle */}
           <div className="absolute w-[350px] h-[350px] sm:w-[450px] sm:h-[450px] -z-10">
             <Image
-              src="/ellipse-30.png"
+              src="/ellipse-30-1.png"
               alt="Background circle"
               width={600}
               height={600}
