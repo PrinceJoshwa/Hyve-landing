@@ -143,6 +143,42 @@
   height: 60px; 
 }
 
+.bg-yellow-rings {
+  background: radial-gradient(
+    circle,
+    #ffd600 0%,
+    #ffd600 20%,
+    #ffca28 20%,
+    #ffca28 40%,
+    #ffb300 40%,
+    #ffb300 50%,
+    #ffa000 50%,
+    #ffb300 65%,
+    transparent 80%
+  );
+  box-shadow: 0 0 60px 30px rgba(255, 193, 7, 0.4);
+}
+
+/* .bg-yellow-rings {
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  border-radius: 9999px;
+  background: radial-gradient(
+    circle,
+    #f1ab13 0%,
+    #f1ab13 25%,
+    #f9cb39 25%,
+    #f9cb39 50%,
+    #f3cf45 50%,
+    #f3cf45 75%,
+    transparent 75%
+  );
+  box-shadow: 0 0 100px 40px #fbee96;
+  z-index: 0;
+} */
+
+
 @keyframes float {
   0%, 100% {
     transform: translateY(0);
