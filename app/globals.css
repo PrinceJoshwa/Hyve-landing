@@ -143,68 +143,21 @@
   height: 60px; 
 }
 
-/* .bg-yellow-rings {
-  background: radial-gradient(
-      circle at center,
-      #ffa000 0%,
-      #ffa000 15%,
-      #ffb300 15% ,
-      #ffb300 35%,
-      rgba(255, 202, 40, 0.7) 35% ,
-      rgba(255, 202, 40, 0.7) 50%,
-      rgba(255, 214, 0, 0.1) 50%,
-      rgba(255, 214, 0, 0.1) 65%,
-      transparent 85%
-    ), repeating-linear-gradient(to right, #fdd835 1px, transparent 0px),
-    repeating-linear-gradient(to bottom, #fdd835 1px, transparent 1px);
-  background-size: 100% 100%, 20px 20px, 20px 20px;
-  background-position: 0 0, 0 0, 0 0;
-  background-color: #ffe082; 
-  box-shadow: 0 0 60px 30px rgba(255, 193, 7, 0.4);
-} */
-
 .bg-yellow-rings {
   background: radial-gradient(
-      circle at center,
-      #F1AB13 0% /* Darkest inner */,
-      #F1AB13 35%,
-      rgba(241, 171, 19, 0.5) 35% /* Darker ring starts, 70% opaque */,
-      rgba(241, 171, 19, 0.5) 50%,
-      rgba(253, 193, 11, 0.5) 50% /* Lighter ring starts, now 10% opaque */,
-      rgba(253, 193, 11, 0.5) 65%,
-      transparent 85% /* Fade out */
-    ), repeating-linear-gradient(to right, #fdd835 1px, transparent 1px),
-    repeating-linear-gradient(to bottom, #fdd835 1px, transparent 1px);
-  background-size: 100% 100%, 20px 20px, 20px 20px;
-  background-position: 0 0, 0 0, 0 0;
-  /* background-color: rgba(255, 7, 7, 0.5); / / Base color for the grid background */
-  box-shadow: 0 0 60px 30px rgba(251, 238, 150, 1);
-  animation: breathe-shadow 3s ease-in-out infinite;
+    circle,
+    #ffd600 0%,
+    #ffd600 20%,
+    #ffca28 20%,
+    #ffca28 40%,
+    #ffb300 40%,
+    #ffb300 50%,
+    #ffa000 50%,
+    #ffb300 65%,
+    transparent 80%
+  );
+  box-shadow: 0 0 60px 30px rgba(255, 193, 7, 0.4);
 }
-
-/* Breathing animation */
-@keyframes breathe-shadow {
-  0% {
-    box-shadow: 0 0 60px 30px #FDF7CB;
-  }
-  25%{
-    box-shadow: 0 0 60px 30px rgb(255, 247, 191);
-  }
-  50% {
-    box-shadow: 0 0 90px 45px #fbee96;
-  }
-  75%{
-    box-shadow: 0 0 60px 30px rgb(255, 247, 191);
-  }
-  100% {
-    box-shadow: 0 0 60px 30px #FDF7CB /* rgba(255, 240, 136, 1) */;
-  }
-}
-
-
-
-
-
 
 /* .bg-yellow-rings {
   position: absolute;
