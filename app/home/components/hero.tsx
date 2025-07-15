@@ -97,9 +97,9 @@ export default function Home() {
           <div className="bg-[#FFF4D6] px-3 sm:px-4 py-2 rounded-full flex items-center space-x-2">
             <Image
               src="/check.png"
-              alt="Ved Sharma - Front End Developer"
-              width={208}
-              height={80}
+              alt="check"
+              width={15}
+              height={1}
               className="w-[15px] object-contain drop-shadow-xl"
             />
             <span className="text-[#F1AB13] text-xs sm:text-sm font-medium">India’s First Team-Based Freelance Platform</span>
