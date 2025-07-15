@@ -236,7 +236,7 @@ export default function Home() {
             className="relative z-0 top-5 flex items-center justify-center rounded-full drop-shadow-[0_0_25px_rgba(253,216,53,1)] bg-yellow-rings"
           >
             <Image
-              src="/hyve-hero-img.png"
+              src="/"
               alt="Person with laptop on beanbag"
               width={320}
               height={320}

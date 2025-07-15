@@ -146,14 +146,12 @@
 .bg-yellow-rings {
   background: radial-gradient(
       circle at center,
-      #ffa000 0% /* Darkest inner */,
-      #ffa000 15%,
-      #ffb300 15% /* Lighter ring starts */,
-      #ffb300 35%,
-      rgba(255, 202, 40, 0.7) 35% /* Darker ring starts, 70% opaque */,
-      rgba(255, 202, 40, 0.7) 50%,
-      rgba(255, 214, 0, 0.1) 50% /* Lighter ring starts, now 10% opaque */,
-      rgba(255, 214, 0, 0.1) 65%,
+      #F1AB13 0% /* Darkest inner */,
+      #F1AB13 35%,
+      rgba(241, 171, 19, 0.25) 35% /* Darker ring starts, 70% opaque */,
+      rgba(241, 171, 19, 0.25) 50%,
+      rgba(253, 193, 11, 0.5) 50% /* Lighter ring starts, now 10% opaque */,
+      rgba(253, 193, 11, 0.5) 65%,
       transparent 85% /* Fade out */
     ), repeating-linear-gradient(to right, #fdd835 1px, transparent 1px),
     repeating-linear-gradient(to bottom, #fdd835 1px, transparent 1px);
