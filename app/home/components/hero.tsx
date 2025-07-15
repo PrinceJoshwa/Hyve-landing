@@ -250,7 +250,7 @@ export default function Home() {
               alt="Person with laptop on beanbag"
               width={360}
               height={360}
-              className="absolute inset-0 w-full h-full object-contain scale-125 -left-[7%]"
+              className="absolute inset-0 w-full h-full object-contain scale-125 top-3 -left-[7%]"
             />
           </div>
 
@@ -308,7 +308,7 @@ export default function Home() {
           </div>
 
           {/* New Task Alert - Bottom Right */}
-          <div className="float absolute bottom-0 right-4 sm:right-[20%] w-40 sm:w-70 z-30 border-[#F1AB13] ">
+          <div className="float absolute bottom-0 right-4 sm:right-[24%] w-40 sm:w-70 z-30 border-[#F1AB13] ">
             <Image
               src="/new-task-alert.png"
               alt="New Task Alert - Build website for D2C brand ₹30,000"

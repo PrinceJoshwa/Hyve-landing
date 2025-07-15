@@ -164,29 +164,45 @@
 } */
 
 .bg-yellow-rings {
-  background:
-    radial-gradient(
+  background: radial-gradient(
       circle at center,
-      #F1AB13 0%,       /* Inner Core */
-      #F1AB13 18%,
-      #F1C537 18%,      /* Mid Ring Start */
-      #F1C537 38%,
-      #F3CF45 38%,      /* Outer Ring Start */
-      #F3CF45 58%,
-      #FBEE96 58%,      /* Faded Edge */
-      #FBEE96 80%,
-      transparent 100%
-    ),
-    repeating-linear-gradient(to right, #F3CF45 1px, transparent 20px),
-    repeating-linear-gradient(to bottom, #F3CF45 1px, transparent 20px);
-
-  background-size: 100% 100%, 40px 40px, 40px 40px;
+      #F1AB13 0% /* Darkest inner */,
+      #F1AB13 35%,
+      rgba(241, 171, 19, 0.5) 35% /* Darker ring starts, 70% opaque */,
+      rgba(241, 171, 19, 0.5) 50%,
+      rgba(253, 193, 11, 0.5) 50% /* Lighter ring starts, now 10% opaque */,
+      rgba(253, 193, 11, 0.5) 65%,
+      transparent 85% /* Fade out */
+    ), repeating-linear-gradient(to right, #fdd835 1px, transparent 1px),
+    repeating-linear-gradient(to bottom, #fdd835 1px, transparent 1px);
+  background-size: 100% 100%, 20px 20px, 20px 20px;
   background-position: 0 0, 0 0, 0 0;
-  background-color: #FBEE96;
-  box-shadow: 0 0 80px 30px rgba(241, 171, 19, 0.5);
-  position: relative;
-  z-index: 0;
+  /* background-color: rgba(255, 7, 7, 0.5); / / Base color for the grid background */
+  box-shadow: 0 0 60px 30px rgba(251, 238, 150, 1);
+  animation: breathe-shadow 3s ease-in-out infinite;
 }
+
+/* Breathing animation */
+@keyframes breathe-shadow {
+  0% {
+    box-shadow: 0 0 60px 30px #FDF7CB;
+  }
+  25%{
+    box-shadow: 0 0 60px 30px rgb(255, 247, 191);
+  }
+  50% {
+    box-shadow: 0 0 90px 45px #fbee96;
+  }
+  75%{
+    box-shadow: 0 0 60px 30px rgb(255, 247, 191);
+  }
+  100% {
+    box-shadow: 0 0 60px 30px #FDF7CB /* rgba(255, 240, 136, 1) */;
+  }
+}
+
+
+
 
 
 
