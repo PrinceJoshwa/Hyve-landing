@@ -246,7 +246,7 @@ export default function Home() {
 
           <div className="relative w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] overflow-visible rounded-full bg-yellow-rings">
             <Image
-              src="/hyve-hero-img.png"
+              src="/hyvehero.png"
               alt="Person with laptop on beanbag"
               width={360}
               height={360}
