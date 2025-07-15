@@ -232,7 +232,7 @@ export default function Home() {
           </div>
 
           {/* Central Hero Image */}
-          <div
+          {/* <div
             className="relative z-0 top-5 flex items-center justify-center rounded-full drop-shadow-[0_0_25px_rgba(253,216,53,1)] bg-yellow-rings"
           >
             <Image
@@ -242,7 +242,35 @@ export default function Home() {
               height={320}
               className="w-[300px] h-[300px] sm:w-[600px] sm:h-[600px] object-contain"
             />
-          </div>
+          </div> */}
+
+          {/* <div className="relative w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] overflow-visible rounded-full bg-yellow-rings">
+            <Image
+              src="/hyve-hero-img.png"
+              alt="Person with laptop on beanbag"
+              width={360}
+              height={360}
+              className="absolute inset-0 w-full h-full object-contain scale-125 -left-[7%]"
+            />
+          </div> */}
+          <div className="relative w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] overflow-visible rounded-full bg-yellow-rings">
+  {/* Outer ring */}
+  <div className="ring-glow-outer"></div>
+
+  {/* Inner ring */}
+  <div className="ring-glow-inner"></div>
+
+  {/* Image */}
+  <Image
+    src="/hyve-hero-img.png"
+    alt="Person with laptop on beanbag"
+    width={360}
+    height={360}
+    className="absolute inset-0 w-full h-full object-contain scale-125 -left-[7%] z-20"
+  />
+</div>
+
+
 
 
           {/* Rahul Shetty Card - Bottom Left */}
