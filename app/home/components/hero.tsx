@@ -29,6 +29,7 @@ import Link from "next/link"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Progress } from "@/components/ui/progress"
 import HowItWorks from "./howhyveworks"
+import HeroSvg from "../../../public/hyve-hero-img-svg.svg"
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState("hire")
@@ -236,7 +237,7 @@ export default function Home() {
             className="relative z-0 top-5 flex items-center justify-center rounded-full drop-shadow-[0_0_25px_rgba(253,216,53,1)] bg-yellow-rings"
           >
             <Image
-              src="/"
+              src={HeroSvg}
               alt="Person with laptop on beanbag"
               width={320}
               height={320}
