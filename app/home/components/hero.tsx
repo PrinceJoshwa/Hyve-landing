@@ -244,7 +244,7 @@ export default function Home() {
             />
           </div> */}
 
-          {/* <div className="relative w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] overflow-visible rounded-full bg-yellow-rings">
+          <div className="relative w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] overflow-visible rounded-full bg-yellow-rings">
             <Image
               src="/hyve-hero-img.png"
               alt="Person with laptop on beanbag"
@@ -252,24 +252,7 @@ export default function Home() {
               height={360}
               className="absolute inset-0 w-full h-full object-contain scale-125 -left-[7%]"
             />
-          </div> */}
-          <div className="relative w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] overflow-visible rounded-full bg-yellow-rings">
-  {/* Outer ring */}
-  <div className="ring-glow-outer"></div>
-
-  {/* Inner ring */}
-  <div className="ring-glow-inner"></div>
-
-  {/* Image */}
-  <Image
-    src="/hyve-hero-img.png"
-    alt="Person with laptop on beanbag"
-    width={360}
-    height={360}
-    className="absolute inset-0 w-full h-full object-contain scale-125 -left-[7%] z-20"
-  />
-</div>
-
+          </div>
 
 
 
