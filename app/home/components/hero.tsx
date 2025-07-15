@@ -123,7 +123,7 @@ export default function Home() {
           {/* Action Buttons */}
           <div className="flex justify-center items-center mb-6 sm:mb-8 px-4">
             <div className="flex rounded-lg border border-yellow-600 bg-gray-100 p-[2px]">
-              <Link href="https://staging.hyvefreelance.com/auth/login" passHref>
+              <Link href="https://app.hyvefreelance.com" passHref>
                 <Button
                   onClick={() => setActiveTab("hire")}
                   className={`flex items-center px-6 py-3 rounded-lg font-medium ${activeTab === "hire"
@@ -142,7 +142,7 @@ export default function Home() {
                 </Button>
               </Link>
 
-              <Link href="https://staging.hyvefreelance.com/auth/login" passHref>
+              <Link href="https://app.hyvefreelance.com" passHref>
                 <Button
                   onClick={() => setActiveTab("find")}
                   className={`px-6 py-3 rounded-lg font-medium ${activeTab === "find"
@@ -200,7 +200,7 @@ export default function Home() {
               height={80}
               className="w-full h-auto object-contain drop-shadow-xl cursor-pointer"
               onClick={() => {
-                window.location.href = "https://staging.hyvefreelance.com/auth/login";
+                window.location.href = "https://app.hyvefreelance.com";
               }}
             />
             <div className="absolute bottom-12 bottom-12 sm:-bottom-13 sm:-right-50 -right-28 w-30 h-12 sm:w-50 sm:h-50 overflow-hidden ">
@@ -367,7 +367,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="bg-white rounded-[12px] p-[2px] shadow-md">
-                <Link href="https://staging.hyvefreelance.com/auth/login" passHref>
+                <Link href="https://app.hyvefreelance.com" passHref>
                   <Button
                     className="bg-[#FFD600] hover:bg-[#FFC400] text-black text-[14px] font-semibold px-5 py-2 rounded-[10px]"
                     asChild
@@ -636,7 +636,7 @@ export default function Home() {
                         <p className="text-gray-600 mb-6 max-w-md">
                           Join HYVE today and collaborate with top-tier teams on impactful projects.
                         </p>
-                        <Link href="https://staging.hyvefreelance.com/auth/login" passHref>
+                        <Link href="https://app.hyvefreelance.com" passHref>
                           <Button
                             className="bg-gradient-to-r from-[#F1AB13] via-[#FFD700] to-[#F1AB13] text-[#2D2D2D] px-8 py-3 rounded-full text-base font-semibold shadow-md hover:from-[#FFD700] hover:to-[#F1AB13] transition-all duration-300 transform hover:-translate-y-1"
                             asChild
@@ -755,7 +755,7 @@ export default function Home() {
 
                     <div className="text-center">
                       <p className="text-gray-500 mb-6">Ideal for startups, product teams, agencies & service-based firms.</p>
-                      <Link href="https://staging.hyvefreelance.com/auth/login" passHref>
+                      <Link href="https://app.hyvefreelance.com" passHref>
                         <Button
                           className="bg-gradient-to-r from-[#F9A825] to-[#FFD600] text-black font-semibold text-sm px-6 py-2 rounded-lg border border-yellow-400 shadow-md hover:brightness-105 transition"
                           asChild

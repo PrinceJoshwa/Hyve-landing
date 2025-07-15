@@ -133,12 +133,12 @@
 
 //       {/* Buttons */}
 //       <div className="flex items-center space-x-2 sm:space-x-3">
-//         <Link href="https://staging.hyvefreelance.com/auth/login" passHref>
+//         <Link href="https://app.hyvefreelance.com" passHref>
 //           <Button variant="ghost" className="hidden sm:flex text-[#666666] text-sm font-medium" asChild>
 //             <span>Login</span>
 //           </Button>
 //         </Link>
-//         <Link href="https://staging.hyvefreelance.com/auth/login" passHref>
+//         <Link href="https://app.hyvefreelance.com" passHref>
 //           <Button
 //             className="bg-gradient-to-r from-[#F9A825] to-[#FFD600] text-black font-semibold text-sm sm:text-base px-6 py-2 rounded-lg border border-yellow-400 shadow-md hover:brightness-105 transition"
 //             asChild
@@ -188,12 +188,12 @@
 //               </Link>
 //             ),
 //           )}
-//           <Link href="https://staging.hyvefreelance.com/auth/login" passHref>
+//           <Link href="https://app.hyvefreelance.com" passHref>
 //             <Button variant="ghost" className="text-[#666666] text-sm font-medium" onClick={closeMobileMenu} asChild>
 //               <span>Login</span>
 //             </Button>
 //           </Link>
-//           <Link href="https://staging.hyvefreelance.com/auth/login" passHref>
+//           <Link href="https://app.hyvefreelance.com" passHref>
 //             <Button
 //               className="bg-gradient-to-r from-[#F9A825] to-[#FFD600] text-black font-semibold text-sm px-6 py-2 w-full rounded-lg border border-yellow-400 shadow-md hover:brightness-105 transition"
 //               asChild
@@ -340,12 +340,12 @@ export default function Header() {
       </nav>
       {/* Buttons */}
       <div className="flex items-center space-x-2 sm:space-x-3">
-        <Link href="https://staging.hyvefreelance.com/auth/login" passHref>
+        <Link href="https://app.hyvefreelance.com" passHref>
           <Button variant="ghost" className="hidden sm:flex text-[#666666] text-sm font-medium" asChild>
             <span>Login</span>
           </Button>
         </Link>
-        <Link href="https://staging.hyvefreelance.com/auth/login" passHref>
+        <Link href="https://app.hyvefreelance.com" passHref>
           <Button
             className="bg-gradient-to-r from-[#F9A825] to-[#FFD600] text-black font-semibold text-sm sm:text-base px-6 py-2 rounded-lg border border-yellow-400 shadow-md hover:brightness-105 transition"
             asChild
@@ -394,12 +394,12 @@ export default function Header() {
               </Link>
             ),
           )}
-          <Link href="https://staging.hyvefreelance.com/auth/login" passHref>
+          <Link href="https://app.hyvefreelance.com" passHref>
             <Button variant="ghost" className="text-[#666666] text-sm font-medium" onClick={closeMobileMenu} asChild>
               <span>Login</span>
             </Button>
           </Link>
-          <Link href="https://staging.hyvefreelance.com/auth/login" passHref>
+          <Link href="https://app.hyvefreelance.com" passHref>
             <Button
               className="bg-gradient-to-r from-[#F9A825] to-[#FFD600] text-black font-semibold text-sm px-6 py-2 w-full rounded-lg border border-yellow-400 shadow-md hover:brightness-105 transition"
               asChild
