@@ -107,7 +107,7 @@ export default function Home() {
         </div>
 
         {/* Main Headline */}
-        <div className="bg-dot-grid">
+        <div>
           <div className="text-center px-4 sm:px-6 pb-4 sm:pb-6">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-[#2D2D2D] leading-tight mb-4 sm:mb-6">
               Find the{" "}
@@ -151,7 +151,13 @@ export default function Home() {
                     }`}
                   asChild
                 >
-                  <span>Find Tasks</span>
+                  <span>
+                  <Search
+                      className={`w-4 h-4 mr-2 text-yellow-400 ${activeTab === "find" ? "text-yellow-400" : "text-gray-400"
+                        }`}
+                    />
+                    Find Tasks
+                    </span>
                 </Button>
               </Link>
             </div>
@@ -545,10 +551,17 @@ export default function Home() {
                               </div>
                               <Progress value={(10 / 15) * 100} className="h-2 bg-gray-200 [&>*]:bg-[#34A853]" />
                               <p className="text-gray-700 italic text-sm mt-18 mb-4">"Elevate Your Freelance Career"</p>
-                              <Button
+                              {/* <Button
                                 className="bg-gradient-to-r from-[#F9A825] to-[#FFD600] text-black font-semibold text-sm sm:text-base px-6 py-2 rounded-lg border border-yellow-400 shadow-md hover:brightness-105 transition">
                                 Join Now
-                              </Button>
+                              </Button> */}
+                              <Link href="https://app.hyvefreelance.com/auth/login">
+                                <Button
+                                  className="bg-gradient-to-r from-[#F9A825] to-[#FFD600] text-black font-semibold text-sm sm:text-base px-6 py-2 rounded-lg border border-yellow-400 shadow-md hover:brightness-105 transition"
+                                >
+                                  Join Now
+                                </Button>
+                              </Link>
                             </div>
 
                             {/* Right Column: Milestone Summary & Team Project Value */}
@@ -592,9 +605,9 @@ export default function Home() {
                       </div>
                     </div>
                     {/* Active Teams & Skills */}
-                    <div className="grid lg:grid-cols-2 gap-8 mb-16">
+                    <div className="grid grid-cols-1 gap-8 mb-16">
                       {/* Active Teams */}
-                      <div className="bg-white shadow-lg rounded-3xl p-8 border border-gray-100">
+                      {/* <div className="bg-white shadow-lg rounded-3xl p-8 border border-gray-100">
                         <h3 className="text-2xl font-bold text-[#2D2D2D] mb-6">Your Active Teams</h3>
                         <div className="space-y-4">
                           {[
@@ -628,7 +641,7 @@ export default function Home() {
                             </div>
                           ))}
                         </div>
-                      </div>
+                      </div> */}
 
                       {/* CTA instead of Skills */}
                       <div className="bg-white shadow-xl rounded-2xl p-6 flex flex-col items-center justify-center text-center">

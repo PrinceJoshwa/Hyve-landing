@@ -1,12 +1,11 @@
 // "use client"
-
-// import { Button } from "@/components/ui/button"
 // import Link from "next/link"
 // import { usePathname } from "next/navigation"
 // import { useState, useCallback, useEffect } from "react"
 // import { Menu, X } from "lucide-react"
 // import Image from "next/image"
 // import clsx from "clsx"
+// import { Button } from "@/components/ui/button"
 
 // export default function Header() {
 //   const pathname = usePathname()
@@ -17,11 +16,9 @@
 //   useEffect(() => {
 //     // Initialize currentHash on mount
 //     setCurrentHash(window.location.hash)
-
 //     const handleHashChange = () => {
 //       setCurrentHash(window.location.hash)
 //     }
-
 //     window.addEventListener("hashchange", handleHashChange)
 //     return () => {
 //       window.removeEventListener("hashchange", handleHashChange)
@@ -34,11 +31,9 @@
 //         // Handle hash links (e.g., "/#for-freelancers")
 //         const baseHref = path.split("#")[0] || "/" // Get the path part (e.g., "/" from "/#for-freelancers")
 //         const hashPart = path.split("#")[1] // Get the hash part (e.g., "for-freelancers")
-
 //         const currentPathMatchesBase =
 //           pathname === baseHref || (baseHref === "/" && (pathname === "/" || pathname === "/home"))
 //         const currentHashMatches = currentHash === `#${hashPart}` // Use currentHash state
-
 //         return currentPathMatchesBase && currentHashMatches
 //       } else {
 //         // Handle regular links (e.g., "/about", "/blog")
@@ -54,7 +49,6 @@
 //   const toggleMobileMenu = useCallback(() => {
 //     setIsMobileMenuOpen((prev) => !prev)
 //   }, [])
-
 //   const closeMobileMenu = useCallback(() => {
 //     setIsMobileMenuOpen(false)
 //   }, [])
@@ -73,7 +67,7 @@
 //     label: string
 //     onClick?: () => void
 //   }> = [
-//     { href: "/about", label: "About" },
+    
 //     {
 //       href: "/#for-freelancers",
 //       label: "For freelancers",
@@ -84,8 +78,11 @@
 //       label: "For companies",
 //       onClick: () => scrollToSection("for-companies"),
 //     },
-//     { href: "/blog", label: "Blog" }, // Moved Blog before Contact
-//     { href: "/contact", label: "Contact" },
+//      { href: "/blog", label: "Blog" },
+//     { href: "/contact", label: "Support" },
+//     // Reverted to Blog
+//     { href: "/about", label: "About" },
+   
 //   ]
 
 //   return (
@@ -97,40 +94,41 @@
 //         </div>
 //         <span className="text-xl sm:text-2xl font-bold text-black">HYVE</span>
 //       </Link>
-
 //       {/* Desktop Nav */}
 //       <nav className="hidden lg:flex items-center space-x-6">
-//         {navItems.map((item) =>
-//           item.onClick ? (
-//             <button
-//               key={`${item.href}-${item.label}`}
-//               onClick={item.onClick}
-//               className={clsx(
-//                 "text-sm font-medium transition-colors cursor-pointer",
-//                 isActive(item.href)
-//                   ? "bg-gradient-to-r from-[#F9A825] to-[#FFD600] text-white px-4 py-2 rounded-lg shadow-sm"
-//                   : "text-[#666666] hover:text-[#F1AB13] px-4 py-2",
-//               )}
-//             >
-//               {item.label}
-//             </button>
-//           ) : (
-//             <Link
-//               key={`${item.href}-${item.label}`}
-//               href={item.href}
-//               className={clsx(
-//                 "text-sm font-medium transition-colors cursor-pointer",
-//                 isActive(item.href)
-//                   ? "bg-gradient-to-r from-[#F9A825] to-[#FFD600] text-white px-4 py-2 rounded-lg shadow-sm"
-//                   : "text-[#666666] hover:text-[#F1AB13] px-4 py-2",
-//               )}
-//             >
-//               {item.label}
-//             </Link>
-//           ),
-//         )}
+//         {/* Added container for the nav items with border and shadow */}
+//         <div className="flex items-center space-x-6">
+//           {navItems.map((item) =>
+//             item.onClick ? (
+//               <button
+//                 key={`${item.href}-${item.label}`}
+//                 onClick={item.onClick} // Use original onClick
+//                 className={clsx(
+//                   "text-sm font-medium transition-colors cursor-pointer relative py-1", // Added relative and py-1 for line positioning
+//                   isActive(item.href)
+//                     ? "text-black after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-full after:bg-gradient-to-r after:from-[#F9A825] after:to-[#FFD600] after:shadow-sm" // Line styling
+//                     : "text-[#666666] hover:text-[#F1AB13]", // Original inactive styling
+//                 )}
+//               >
+//                 {item.label}
+//               </button>
+//             ) : (
+//               <Link
+//                 key={`${item.href}-${item.label}`}
+//                 href={item.href}
+//                 className={clsx(
+//                   "text-sm font-medium transition-colors cursor-pointer relative py-1", // Added relative and py-1 for line positioning
+//                   isActive(item.href)
+//                     ? "text-black after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-full after:bg-gradient-to-r after:from-[#F9A825] after:to-[#FFD600] after:shadow-sm" // Line styling
+//                     : "text-[#666666] hover:text-[#F1AB13]", // Original inactive styling
+//                 )}
+//               >
+//                 {item.label}
+//               </Link>
+//             ),
+//           )}
+//         </div>
 //       </nav>
-
 //       {/* Buttons */}
 //       <div className="flex items-center space-x-2 sm:space-x-3">
 //         <Link href="https://app.hyvefreelance.com" passHref>
@@ -151,7 +149,6 @@
 //           {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
 //         </Button>
 //       </div>
-
 //       {/* Mobile Menu */}
 //       {isMobileMenuOpen && (
 //         <div className="absolute top-full left-0 w-full bg-white shadow-lg flex flex-col items-start px-4 py-4 space-y-4 lg:hidden">
@@ -166,7 +163,7 @@
 //                 className={clsx(
 //                   "block text-sm font-medium",
 //                   isActive(item.href)
-//                     ? "bg-gradient-to-r from-[#F9A825] to-[#FFD600] text-white px-4 py-2 rounded-lg w-full text-left"
+//                     ? "bg-gradient-to-r from-[#F9A825] to-[#FFD600] text-white px-4 py-2 rounded-lg w-full text-left" // Original mobile active styling
 //                     : "text-[#666666] hover:text-[#F1AB13] px-4 py-2 w-full text-left",
 //                 )}
 //               >
@@ -180,7 +177,7 @@
 //                 className={clsx(
 //                   "block text-sm font-medium",
 //                   isActive(item.href)
-//                     ? "bg-gradient-to-r from-[#F9A825] to-[#FFD600] text-white px-4 py-2 rounded-lg w-full text-left"
+//                     ? "bg-gradient-to-r from-[#F9A825] to-[#FFD600] text-white px-4 py-2 rounded-lg w-full text-left" // Original mobile active styling
 //                     : "text-[#666666] hover:text-[#F1AB13] px-4 py-2 w-full text-left",
 //                 )}
 //               >
@@ -209,7 +206,7 @@
 
 "use client"
 import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { usePathname, useRouter } from "next/navigation"
 import { useState, useCallback, useEffect } from "react"
 import { Menu, X } from "lucide-react"
 import Image from "next/image"
@@ -218,6 +215,7 @@ import { Button } from "@/components/ui/button"
 
 export default function Header() {
   const pathname = usePathname()
+  const router = useRouter() // Add this line
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [currentHash, setCurrentHash] = useState("") // State to track current hash
 
@@ -263,12 +261,9 @@ export default function Header() {
   }, [])
 
   const scrollToSection = (sectionId: string) => {
-    if (pathname !== "/" && pathname !== "/home") {
-      window.location.href = `/#${sectionId}`
-      return
-    }
-    // Always update the hash, which will trigger the effect in Hero
-    window.location.hash = `#${sectionId}`
+    // Always use router.push for consistent client-side navigation
+    // This will update the URL and trigger the hashchange listener in Home component
+    router.push(`/#${sectionId}`)
   }
 
   const navItems: Array<{
@@ -276,7 +271,6 @@ export default function Header() {
     label: string
     onClick?: () => void
   }> = [
-    
     {
       href: "/#for-freelancers",
       label: "For freelancers",
@@ -287,11 +281,10 @@ export default function Header() {
       label: "For companies",
       onClick: () => scrollToSection("for-companies"),
     },
-     { href: "/blog", label: "Blog" },
+    { href: "/blog", label: "Blog" },
     { href: "/contact", label: "Support" },
     // Reverted to Blog
     { href: "/about", label: "About" },
-   
   ]
 
   return (

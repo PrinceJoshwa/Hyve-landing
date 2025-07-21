@@ -47,12 +47,12 @@ export default function Footer() {
               >
                 About
               </Link>
-              <Link
+              {/* <Link
                 href="/careers"
                 className="text-gray-400 hover:text-[#F5A623] text-sm transition-colors"
               >
                 Careers
-              </Link>
+              </Link> */}
               <Link
                 href="/blog"
                 className="text-gray-400 hover:text-[#F5A623] text-sm transition-colors"
@@ -66,12 +66,12 @@ export default function Footer() {
           <div>
             <h4 className="text-lg mb-4">Support</h4>
             <div className="flex flex-col space-y-3">
-              <Link
+              {/* <Link
                 href="/help"
                 className="text-gray-400 hover:text-[#F5A623] text-sm transition-colors"
               >
                 Help Center
-              </Link>
+              </Link> */}
               <Link
                 href="/community"
                 className="text-gray-400 hover:text-[#F5A623] text-sm transition-colors"
