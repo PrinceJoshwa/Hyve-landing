@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.hyvefreelance.com
+
+# Sitemaps
+Sitemap: https://www.hyvefreelance.com/sitemap.xml
