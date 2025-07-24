@@ -34,7 +34,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-semibold mb-2">Email</h3>
               <p className="text-gray-600">support@hyvefreelance.com</p>
@@ -47,7 +47,7 @@ export default function Contact() {
               <h3 className="text-xl font-semibold mb-2">Social</h3>
               <p className="text-gray-600">Follow us on LinkedIn</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </main>
       <Footer />
