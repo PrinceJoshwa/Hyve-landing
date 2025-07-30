@@ -107,7 +107,7 @@ export default function PrivacyPolicyPage() {
 
         <h2 className="text-2xl font-semibold text-[#2D2D2D] mb-4">8. Contact Us</h2>
         <p className="mb-4">
-          If you have any questions about this Privacy Policy, please contact us at support@hyvefreelance.com.
+          If you have any questions about this Privacy Policy, please contact us at team@hyvefreelance.com.
         </p>
       </div>
     </div>
