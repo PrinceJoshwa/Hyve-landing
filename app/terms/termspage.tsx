@@ -76,7 +76,7 @@ export default function TermsOfUsePage() {
 
         <h2 className="text-2xl font-semibold text-[#2D2D2D] mb-4">9. Contact Information</h2>
         <p className="mb-4">
-          If you have any questions about these Terms of Use, please contact us at support@hyvefreelance.com.
+          If you have any questions about these Terms of Use, please contact us at team@hyvefreelance.com.
         </p>
       </div>
     </div>
