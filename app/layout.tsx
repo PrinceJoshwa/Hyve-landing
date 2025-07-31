@@ -51,6 +51,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Hyve-India's First Team-Based Freelance Platform",
   description: "India's First Team-Based Freelance Platform",
+  other: {
+    "p:domain_verify": "3f1a4e9e988ef7f4a85e857b1180e252",
+  },
 }
 
 export default function RootLayout({
